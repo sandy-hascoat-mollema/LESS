@@ -1,0 +1,1173 @@
+// =====================================================
+// GENERIC VARS
+// =====================================================
+
+// ----------------------------------------
+// SYSTEM
+// ----------------------------------------
+@nested-1:                 ~'.nested-1';
+@nested-2:                 ~'.nested-2.nested-2s';
+@selector-form-button:     ~'.pf_form_table .pf_submit_cell .pf_submit_button';
+@selector-lightbox-button: ~'.lbui_lightbox_flex a.lbux_button_link';
+
+@button-a-type: ~'a';
+@button-b-type: ~'b';
+
+@button-size-large:  ~'large';
+@button-size-medium: ~'medium';
+@button-size-small:  ~'small';
+@button-size-wide:   ~'wide';
+
+@button-icon-a: ~'checked';
+@button-icon-b: ~'arrow';
+@button-icon-c: ~'phone';
+@button-icon-d: ~'download';
+
+// ----------------------------------------
+// FONTS
+// ----------------------------------------
+@font-family-a:      'Open Sans', sans-serif;
+@font-family-a-name: 'Open Sans Regular';
+
+@font-family-b:      'Ovo', serif;
+@font-family-b-name: 'Ovo';
+
+@font-weight-regular:   400;
+@font-weight-semi-bold: 600;
+@font-weight-bold:      700;
+
+// ----------------------------------------
+// COLORS
+// ----------------------------------------
+@color-white:      #fff;
+@color-white-name: 'White';
+
+@color-black:      #000;
+@color-black-name: 'Black';
+
+@color-a:          #aaa;
+@color-a-name:     'Medium Gray';
+
+@color-b:          #666;
+@color-b-name:     'Dark Gray';
+
+@color-c:          #444;
+@color-c-name:     'Darker Gray';
+
+@color-d:          #9FAEB9;
+@color-d-name:     'Light Blue';
+
+@color-e:          #465C6B;
+@color-e-name:     'Medium Blue';
+
+@color-f:          #293944;
+@color-f-name:     'Dark Blue';
+
+@color-g:          #e8e8e8;
+@color-g-name:     'Light Gray';
+
+@color-h:          #f8f8f8;
+@color-h-name:     'Darker Gray';
+
+// ----------------------------------------
+// CTA LINK
+// ----------------------------------------
+@link-icon-x:                10px;
+@link-icon-y:                48%;
+@link-icon-spacing:          1.2em;
+@link-text-decoration:       none;
+@link-text-hover-decoration: underline;
+
+// ----------------------------------------
+// LISTS
+// ----------------------------------------
+@icon-bullet-x:     0;
+@icon-bullet-y:     0.35em;
+@icon-bullet-space: 1.5em;
+
+// ----------------------------------------
+// BUTTONS
+// ----------------------------------------
+@button-icon-x: 10px;
+@button-icon-y: 48%;
+
+// ----------------------------------------
+// LOGOS
+// ----------------------------------------
+@logo-height:    85px;
+@logo-width:     152px;
+@logo-sm-height: 50px;
+@logo-sm-width:  90px;
+
+
+
+
+
+// =====================================================
+// MAPPING VARS
+// =====================================================
+
+// ----------------------------------------
+// BACKGROUNDS
+// ----------------------------------------
+
+// @background-a
+@background-a-label:              '@{color-white-name} Background';
+@background-a-background-color-1: @color-white;
+@background-a-background-color-2: false;
+
+// @background-b
+@background-b-label:              '@{color-white-name} Transparent';
+@background-b-background-color-1: @color-white;
+@background-b-background-color-2: fade(@color-white, 50%);
+
+// @background-c
+@background-c-label:              '@{color-black-name} Transparent';
+@background-c-background-color-1: @color-black;
+@background-c-background-color-2: fade(@color-black, 40%);
+
+// @background-d
+@background-d-label:              '@{color-b-name} Background';
+@background-d-background-color-1: @color-b;
+@background-d-background-color-2: false;
+
+// @background-e
+@background-e-label:              '@{color-d-name} Background';
+@background-e-background-color-1: @color-d;
+@background-e-background-color-2: false;
+
+// @background-f
+@background-f-label:              '@{color-e-name} Background';
+@background-f-background-color-1: @color-e;
+@background-f-background-color-2: false;
+
+// @background-g
+@background-g-label:              '@{color-f-name} Background';
+@background-g-background-color-1: @color-f;
+@background-g-background-color-2: false;
+
+// @background-h
+@background-h-label:              '@{color-black-name} Background';
+@background-h-background-color-1: @color-black;
+@background-h-background-color-2: false;
+
+// @background-i
+@background-i-label:              '@{color-g-name} Background';
+@background-i-background-color-1: @color-g;
+@background-i-background-color-2: false;
+
+// @background-j
+@background-j-label:              '@{color-a-name} Background';
+@background-j-background-color-1: @color-a;
+@background-j-background-color-2: false;
+
+
+
+// ----------------------------------------
+// BUTTONS
+// ----------------------------------------
+
+// @button
+@button-margin: 0.5em 0;
+
+// @button-a
+@button-a-name:             'Cadet Blue';
+@button-a-background:       @color-e;
+@button-a-color:            @color-white;
+@button-a-hover-background: @color-d;
+@button-a-hover-color:      @color-white;
+@button-a-radius:           false;
+
+// @button-b
+@button-b-name:             @color-black-name;
+@button-b-background:       @color-black;
+@button-b-color:            @color-white;
+@button-b-hover-background: @color-b;
+@button-b-hover-color:      @color-white;
+@button-b-radius:           5px;
+
+// @button-large
+@button-large-name:         @button-size-large; //@size-c;
+@button-large-font-size:    1.286em;
+@button-large-padding:      0.5em 2.667em;
+@button-large-full-width:   false;
+@button-large-line-height:  false;
+@button-large-icon-padding: ~'0.5em 2.767em 0.5em 3.0em';
+
+// @button-medium
+@button-medium-name:         @button-size-medium; //@size-b;
+@button-medium-font-size:    1.143em;
+@button-medium-padding:      0.5em 2.15em;
+@button-medium-full-width:   false;
+@button-medium-line-height:  false;
+@button-medium-icon-padding: ~'0.5em 2.250em 0.5em 2.8em';
+
+// @button-small
+@button-small-name:         @button-size-small; //@size-a;
+@button-small-font-size:    0.929em;
+@button-small-padding:      0.5em 1.83em;
+@button-small-full-width:   false;
+@button-small-line-height:  false;
+@button-small-icon-padding: ~'0.5em 2.033em 0.5em 2.8em';
+
+// @button-wide
+@button-wide-name:         @button-size-wide; //@size-d;
+@button-wide-font-size:    1.286em;
+@button-wide-padding:      0.5em;
+@button-wide-full-width:   true;
+@button-wide-line-height:  1.4;
+@button-wide-icon-padding: ~'0.5em 0.5em 0.5em 2.1em';
+
+// @button-a-large
+@button-a-large-label:  '@{button-a-name} (@{button-large-name})';
+// @button-b-large
+@button-b-large-label:  '@{button-b-name} (@{button-large-name})';
+// @button-a-medium
+@button-a-medium-label: '@{button-a-name} (@{button-medium-name})';
+// @button-b-medium
+@button-b-medium-label: '@{button-b-name} (@{button-medium-name})';
+// @button-a-small
+@button-a-small-label:  '@{button-a-name} (@{button-small-name})';
+// @button-b-small
+@button-b-small-label:  '@{button-b-name} (@{button-small-name})';
+// @button-a-wide
+@button-a-wide-label:   '@{button-a-name} (@{button-wide-name})';
+// @button-b-wide
+@button-b-wide-label:   '@{button-b-name} (@{button-wide-name})';
+
+// @button-icon-a
+@button-icon-a-url:   'icon_check.png';
+@button-icon-a-pos-x: @button-icon-x;
+@button-icon-a-pos-y: @button-icon-y;
+
+// @button-icon-b
+@button-icon-b-url:   'icon_cue.png';
+@button-icon-b-pos-x: @button-icon-x;
+@button-icon-b-pos-y: @button-icon-y;
+
+// @button-icon-c
+@button-icon-c-url:   'icon_phone.png';
+@button-icon-c-pos-x: @button-icon-x;
+@button-icon-c-pos-y: @button-icon-y;
+
+// @button-icon-d
+@button-icon-d-url:   'icon_download.png';
+@button-icon-d-pos-x: @button-icon-x;
+@button-icon-d-pos-y: @button-icon-y;
+
+// @button-a
+// @button-a-icon-a
+@button-a-icon-a-large-label:  '@{button-a-name} @{button-icon-a} (@{button-size-large})';
+@button-a-icon-a-medium-label: '@{button-a-name} @{button-icon-a} (@{button-size-medium})';
+@button-a-icon-a-small-label:  '@{button-a-name} @{button-icon-a} (@{button-size-small})';
+@button-a-icon-a-wide-label:   '@{button-a-name} @{button-icon-a} (@{button-size-wide})';
+
+// @button-a-icon-b
+@button-a-icon-b-large-label:  '@{button-a-name} @{button-icon-b} (@{button-size-large})';
+@button-a-icon-b-medium-label: '@{button-a-name} @{button-icon-b} (@{button-size-medium})';
+@button-a-icon-b-small-label:  '@{button-a-name} @{button-icon-b} (@{button-size-small})';
+@button-a-icon-b-wide-label:   '@{button-a-name} @{button-icon-b} (@{button-size-wide})';
+
+// @button-a-icon-c
+@button-a-icon-c-large-label:  '@{button-a-name} @{button-icon-c} (@{button-size-large})';
+@button-a-icon-c-medium-label: '@{button-a-name} @{button-icon-c} (@{button-size-medium})';
+@button-a-icon-c-small-label:  '@{button-a-name} @{button-icon-c} (@{button-size-small})';
+@button-a-icon-c-wide-label:   '@{button-a-name} @{button-icon-c} (@{button-size-wide})';
+
+// @button-a-icon-d
+@button-a-icon-d-large-label:  '@{button-a-name} @{button-icon-d} (@{button-size-large})';
+@button-a-icon-d-medium-label: '@{button-a-name} @{button-icon-d} (@{button-size-medium})';
+@button-a-icon-d-small-label:  '@{button-a-name} @{button-icon-d} (@{button-size-small})';
+@button-a-icon-d-wide-label:   '@{button-a-name} @{button-icon-d} (@{button-size-wide})';
+
+// @button-b
+// @button-b-icon-a
+@button-b-icon-a-large-label:  '@{button-b-name} @{button-icon-a} (@{button-size-large})';
+@button-b-icon-a-medium-label: '@{button-b-name} @{button-icon-a} (@{button-size-medium})';
+@button-b-icon-a-small-label:  '@{button-b-name} @{button-icon-a} (@{button-size-small})';
+@button-b-icon-a-wide-label:   '@{button-b-name} @{button-icon-a} (@{button-size-wide})';
+
+// @button-b-icon-b
+@button-b-icon-b-large-label:  '@{button-b-name} @{button-icon-b} (@{button-size-large})';
+@button-b-icon-b-medium-label: '@{button-b-name} @{button-icon-b} (@{button-size-medium})';
+@button-b-icon-b-small-label:  '@{button-b-name} @{button-icon-b} (@{button-size-small})';
+@button-b-icon-b-wide-label:   '@{button-b-name} @{button-icon-b} (@{button-size-wide})';
+
+// @button-b-icon-c
+@button-b-icon-c-large-label:  '@{button-b-name} @{button-icon-c} (@{button-size-large})';
+@button-b-icon-c-medium-label: '@{button-b-name} @{button-icon-c} (@{button-size-medium})';
+@button-b-icon-c-small-label:  '@{button-b-name} @{button-icon-c} (@{button-size-small})';
+@button-b-icon-c-wide-label:   '@{button-b-name} @{button-icon-c} (@{button-size-wide})';
+
+// @button-b-icon-d
+@button-b-icon-d-large-label:  '@{button-b-name} @{button-icon-d} (@{button-size-large})';
+@button-b-icon-d-medium-label: '@{button-b-name} @{button-icon-d} (@{button-size-medium})';
+@button-b-icon-d-small-label:  '@{button-b-name} @{button-icon-d} (@{button-size-small})';
+@button-b-icon-d-wide-label:   '@{button-b-name} @{button-icon-d} (@{button-size-wide})';
+
+
+
+// ----------------------------------------
+// CAPTION
+// ----------------------------------------
+
+// @caption
+@caption-font-size:      0.85em;
+@caption-padding-bottom: 0.2em;
+@caption-padding-top:    0.2em;
+
+
+
+// ----------------------------------------
+// FONT COLORS
+// ----------------------------------------
+
+// @color-a
+@color-a-label:      '@{color-white-name}';
+@color-a-text-color: @color-white;
+
+// @color-b
+@color-b-label:      '@{color-black-name}';
+@color-b-text-color: @color-black;
+
+// @color-c
+@color-c-label:      '@{color-a-name}';
+@color-c-text-color: @color-a;
+
+// @color-d
+@color-d-label:      '@{color-b-name}';
+@color-d-text-color: @color-b;
+
+// @color-e
+@color-e-label:      '@{color-c-name}';
+@color-e-text-color: @color-c;
+
+// @color-f
+@color-f-label:      '@{color-d-name}';
+@color-f-text-color: @color-d;
+
+// @color-g
+@color-g-label:      '@{color-e-name}';
+@color-g-text-color: @color-e;
+
+// @color-h
+@color-h-label:      '@{color-f-name}';
+@color-h-text-color: @color-f;
+
+// @color-i
+@color-i-label:      '@{color-g-name}';
+@color-i-text-color: @color-g;
+
+
+// ----------------------------------------
+// CONTENT REGION
+// ----------------------------------------
+
+// @content
+@content-padding: 1.5em 0;
+@content-color: false;
+@content-background: false;
+@content-font-size: false;
+@content-link-color: false;
+@content-link-decoration: false;
+@content-link-color-hover: false;
+@content-link-hover-decoration: false;
+
+
+
+// ----------------------------------------
+// FINE-PRINT
+// ----------------------------------------
+
+// @fine-print
+@fine-print-font-size:      0.75em;
+@fine-print-padding-bottom: 0.2em;
+@fine-print-padding-top:    0.2em;
+
+
+
+// ----------------------------------------
+// FONT STYLES
+// ----------------------------------------
+
+// @font-a
+@font-a-label:       '@{font-family-a-name}';
+@font-a-font-family: @font-family-a;
+@font-a-font-weight: @font-weight-regular;
+
+// @font-b
+@font-b-label:       '@{font-family-a-name} Semi Bold';
+@font-b-font-family: @font-family-a;
+@font-b-font-weight: @font-weight-semi-bold;
+
+// @font-c
+@font-c-label:       '@{font-family-a-name} Bold';
+@font-c-font-family: @font-family-a;
+@font-c-font-weight: @font-weight-bold;
+
+// @font-d
+@font-d-label:       '@{font-family-b-name}';
+@font-d-font-family: @font-family-b;
+@font-d-font-weight: false;
+
+
+
+// ----------------------------------------
+// FOOTER REGIONS
+// ----------------------------------------
+
+// @footer
+@footer-label:                 'Footer Transparent';
+@footer-padding:               1em 0;
+@footer-color:                 false;
+@footer-background:            false;
+@footer-font-size:             0.9em;
+@footer-link-color:            false;
+@footer-link-decoration:       false;
+@footer-link-color-hover:      false;
+@footer-link-hover-decoration: false;
+
+// @footer-a
+@footer-a-label:                 'Footer - @{color-h-name}';
+@footer-a-padding:               1.1em 0;
+@footer-a-color:                 @color-h;
+@footer-a-background:            @color-c;
+@footer-a-font-size:             0.9em;
+@footer-a-link-color:            @color-white;
+@footer-a-link-decoration:       none;
+@footer-a-link-color-hover:      @color-g;
+@footer-a-link-hover-decoration: underline;
+
+
+
+// ----------------------------------------
+// FORM PODS
+// ----------------------------------------
+
+// @form-pod-a
+@form-pod-a-label:            '@{color-f-name} Form Pod';
+@form-pod-a-background-1:     @color-f;
+@form-pod-a-background-2:     false;
+@form-pod-a-font-color:       @color-white;
+@form-pod-a-border:           false;
+@form-pod-a-title-color:      @color-white;
+@form-pod-a-form-font-color:  @color-white;
+@form-pod-a-label-color:      @color-white;
+@form-pod-a-submit-btn-bg:    @color-d;
+@form-pod-a-submit-btn-color: @color-white;
+@form-pod-a-submit-btn-hover: @color-e;
+@form-pod-a-input-hover-bg:   false;
+
+// @form-pod-b
+@form-pod-b-label:            '@{color-b-name} Form Pod';
+@form-pod-b-background-1:     @color-b;
+@form-pod-b-background-2:     false;
+@form-pod-b-font-color:       @color-white;
+@form-pod-b-border:           false;
+@form-pod-b-title-color:      @color-white;
+@form-pod-b-form-font-color:  @color-white;
+@form-pod-b-label-color:      @color-white;
+@form-pod-b-submit-btn-bg:    false;
+@form-pod-b-submit-btn-color: false;
+@form-pod-b-submit-btn-hover: false;
+@form-pod-b-input-hover-bg:   false;
+
+// @form-pod-c
+@form-pod-c-label:            '@{color-black-name} Form Pod';
+@form-pod-c-background-1:     @color-black;
+@form-pod-c-background-2:     false;
+@form-pod-c-font-color:       @color-white;
+@form-pod-c-border:           false;
+@form-pod-c-title-1-color:    @color-white;
+@form-pod-c-title-2-color:    @color-d;
+@form-pod-c-form-font-color:  @color-white;
+@form-pod-c-label-color:      @color-white;
+@form-pod-c-submit-btn-bg:    @color-d;
+@form-pod-c-submit-btn-color: false;
+@form-pod-c-submit-btn-hover: false;
+@form-pod-c-input-hover-bg:   @color-a;
+
+
+
+// ----------------------------------------
+// HEADER REGION
+// ----------------------------------------
+
+// @header
+@header-label:                 'Header - Transparent';
+@header-padding:               1.563em 0;
+@header-color:                 false;
+@header-background:            false;
+@header-font-size:             1em;
+@header-link-color:            false;
+@header-link-decoration:       false;
+@header-link-color-hover:      false;
+@header-link-hover-decoration: false;
+
+// @header-a
+@header-a-label:                 'Header - @{color-a-name}';
+@header-a-padding:               1em 0;
+@header-a-color:                 @color-white;
+@header-a-background:            @color-a;
+@header-a-font-size:             false;
+@header-a-link-color:            @color-white;
+@header-a-link-decoration:       false;
+@header-a-link-color-hover:      @color-d;
+@header-a-link-hover-decoration: false;
+
+// @header-b
+@header-b-label:                 'Header - @{color-g-name}';
+@header-b-padding:               1.563em 0;
+@header-b-color:                 @color-f;
+@header-b-background:            @color-g;
+@header-b-font-size:             false;
+@header-b-link-color:            @color-f;
+@header-b-link-decoration:       false;
+@header-b-link-color-hover:      @color-e;
+@header-b-link-hover-decoration: false;
+
+// @header-c
+@header-c-label:                 'Header - Bordered Gray';
+@header-c-padding:               1.5em 0;
+@header-c-color:                 @color-b;
+@header-c-background:            false;
+@header-c-font-size:             false;
+@header-c-link-color:            @color-f;
+@header-c-link-decoration:       false;
+@header-c-link-color-hover:      @color-e;
+@header-c-link-hover-decoration: false;
+@header-c-border-top:            solid 4px @color-a;
+
+
+
+// ----------------------------------------
+// IMAGES
+// ----------------------------------------
+
+// @image-a
+@image-a-margin-left: 0.5em;
+
+// @image-b
+@image-b-margin-right: 0.5em;
+
+// @image-border-radius-a
+@image-border-radius-a-radius: 5px;
+
+// @image-borders-a
+@image-borders-a-label:        'Border Slate';
+@image-borders-a-border-width: 1px;
+@image-borders-a-border-color: @color-c;
+
+
+
+// ----------------------------------------
+// INDENT
+// ----------------------------------------
+
+// @indent
+@indent-margin: 0.85em;
+
+
+
+// ----------------------------------------
+// INNER-CONTENT REGION
+// ----------------------------------------
+
+// @inner-content-wrapper
+@inner-content-wrapper-label:                 'Inner Content - Transparent';
+@inner-content-wrapper-padding:               false;
+@inner-content-wrapper-color:                 false;
+@inner-content-wrapper-background:            false;
+@inner-content-wrapper-font-size:             false;
+@inner-content-wrapper-link-color:            false;
+@inner-content-wrapper-link-decoration:       false;
+@inner-content-wrapper-link-color-hover:      false;
+@inner-content-wrapper-link-hover-decoration: false;
+
+// @inner-content-wrapper-a
+@inner-content-wrapper-a-label:                 'Inner Content - @{color-white-name}';
+@inner-content-wrapper-a-padding:               false;
+@inner-content-wrapper-a-color:                 @color-b;
+@inner-content-wrapper-a-background:            @color-white;
+@inner-content-wrapper-a-font-size:             false;
+@inner-content-wrapper-a-link-color:            false;
+@inner-content-wrapper-a-link-decoration:       false;
+@inner-content-wrapper-a-link-color-hover:      false;
+@inner-content-wrapper-a-link-hover-decoration: false;
+
+// @inner-content-wrapper-b
+@inner-content-wrapper-b-label:                 'Inner Content - @{color-g-name}';
+@inner-content-wrapper-b-padding:               false;
+@inner-content-wrapper-b-color:                 @color-c;
+@inner-content-wrapper-b-background:            @color-g;
+@inner-content-wrapper-b-font-size:             false;
+@inner-content-wrapper-b-link-color:            false;
+@inner-content-wrapper-b-link-decoration:       false;
+@inner-content-wrapper-b-link-color-hover:      false;
+@inner-content-wrapper-b-link-hover-decoration: false;
+
+
+
+// ----------------------------------------
+// LINKS
+// ----------------------------------------
+
+// @link-a
+@link-a-label:                  'CTA Arrow';
+@link-a-icon-url:               'icon_arrow-sm-a.png';
+@link-a-icon-pos-x:             @link-icon-x;
+@link-a-icon-pos-y:             @link-icon-y;
+@link-a-icon-spacing:           @link-icon-spacing;
+@link-a-icon-spacing-direction: right;
+@link-a-link-color:             @color-f;
+@link-a-link-decoration:        @link-text-decoration;
+@link-a-link-hover-color:       @color-d;
+@link-a-link-hover-decoration:  @link-text-hover-decoration;
+
+// @link-b
+@link-b-label:                  'CTA Cue';
+@link-b-icon-url:               'icon_cue-sm-a.png';
+@link-b-icon-pos-x:             @link-icon-x;
+@link-b-icon-pos-y:             @link-icon-y;
+@link-b-icon-spacing:           @link-icon-spacing;
+@link-b-icon-spacing-direction: right;
+@link-b-link-color:             @color-f;
+@link-b-link-decoration:        @link-text-decoration;
+@link-b-link-hover-color:       @color-d;
+@link-b-link-hover-decoration:  @link-text-hover-decoration;
+
+// @link-c
+@link-c-label:                  'CTA Carrot';
+@link-c-icon-url:               'icon_carrot-sm-a.png';
+@link-c-icon-pos-x:             @link-icon-x;
+@link-c-icon-pos-y:             @link-icon-y;
+@link-c-icon-spacing:           @link-icon-spacing;
+@link-c-icon-spacing-direction: right;
+@link-c-link-color:             @color-f;
+@link-c-link-decoration:        @link-text-decoration;
+@link-c-link-hover-color:       @color-d;
+@link-c-link-hover-decoration:  @link-text-hover-decoration;
+
+
+
+// ----------------------------------------
+// LISTS
+// ----------------------------------------
+
+// @list-a
+@list-a-label:          'Bullet List - Circle';
+@list-a-bullet-url:     'icon_circle-sm.png';
+@list-a-bullet-pos-x:   @icon-bullet-x;
+@list-a-bullet-pos-y:   @icon-bullet-y;
+@list-a-bullet-spacing: @icon-bullet-space;
+
+// @list-b
+@list-b-label:          'Bullet List - Checkmark';
+@list-b-bullet-url:     'icon_check-sm.png';
+@list-b-bullet-pos-x:   @icon-bullet-x;
+@list-b-bullet-pos-y:   @icon-bullet-y;
+@list-b-bullet-spacing: @icon-bullet-space;
+
+
+
+// ----------------------------------------
+// LOGOS
+// ----------------------------------------
+
+// @logo-a
+@logo-a-label:     'Header Logo - White';
+@logo-a-url:       'logo_white.png';
+@logo-a-height:    @logo-height;
+@logo-a-width:     @logo-width;
+@logo-a-sm-url:    'logo_white_small.png';
+@logo-a-sm-height: @logo-sm-height;
+@logo-a-sm-width:  @logo-sm-width;
+
+// @logo-b
+@logo-b-label:     'Header Logo - Dark';
+@logo-b-url:       'logo_dark.png';
+@logo-b-height:    @logo-height;
+@logo-b-width:     @logo-width;
+@logo-b-sm-url:    'logo_dark_Small.png';
+@logo-b-sm-height: @logo-sm-height;
+@logo-b-sm-width:  @logo-sm-width;
+
+
+
+// ----------------------------------------
+// NAV FOOTER
+// ----------------------------------------
+
+// @nav-footer-a
+@nav-footer-a-label:           'Footer Links';
+@nav-footer-a-height:          1.75em;
+@nav-footer-a-line-height:     1.75em;
+@nav-footer-a-text-align:      center;
+@nav-footer-a-text-decoration: none;
+
+
+
+// ----------------------------------------
+// PODS
+// ----------------------------------------
+
+// @pod-a
+@pod-a-label:        '@{color-g-name} Pod with Border';
+@pod-a-background-1: @color-white;
+@pod-a-background-2: @color-e;
+@pod-a-font-color:   false;
+@pod-a-border:       1px solid @color-g;
+
+// @pod-b
+@pod-b-label:        '@{color-white-name} Transparent Pod';
+@pod-b-background-1: @color-white;
+@pod-b-background-2: fade(@color-white, 50%);
+@pod-b-font-color:   false;
+@pod-b-border:       false;
+
+// @pod-c
+@pod-c-label:        '@{color-black-name} Transparent Pod';
+@pod-c-background-1: @color-black;
+@pod-c-background-2: fade(@color-black, 40%);
+@pod-c-font-color:   @color-white;
+@pod-c-border:       false;
+@pod-c-title-color:  @color-white;
+
+// @pod-d
+@pod-d-label:        '@{color-a-name} Pod with Border';
+@pod-d-background-1: @color-g;
+@pod-d-background-2: false;
+@pod-d-font-color:   false;
+@pod-d-border:       1px solid @color-a;
+
+// @pod-e
+@pod-e-label:            '@{color-a-name} Pod';
+@pod-e-background-1:     @color-a;
+@pod-e-background-2:     false;
+@pod-e-font-color:       @color-g;
+@pod-e-border:           false;
+@pod-e-subhead-color:    @color-f;
+@pod-e-link-hover-color: @color-e;
+
+// @pod-f
+@pod-f-label:        '@{color-e-name} Pod';
+@pod-f-background-1: @color-e;
+@pod-f-background-2: false;
+@pod-f-font-color:   @color-white;
+@pod-f-border:       false;
+@pod-f-h1-color:     @color-white;
+@pod-f-h2-color:     @color-g;
+@pod-f-h3-color:     @color-d;
+
+// @pod-g
+@pod-g-label:        '@{color-white-name} Pod';
+@pod-g-background-1: @color-white;
+@pod-g-background-2: false;
+@pod-g-font-color:   false;
+@pod-g-border:       false;
+
+
+// @pod
+@pod-padding: 0.85em;
+
+
+
+// ----------------------------------------
+// POST-CONTENT REGIONS
+// ----------------------------------------
+
+// @post-content
+@post-content-label:                 'Post-Content - Transparent';
+@post-content-padding:               0.714em 0;
+@post-content-text-color:            false;
+@post-content-background:            false;
+@post-content-font-size:             false;
+@post-content-link-color:            false;
+@post-content-link-decoration:       false;
+@post-content-link-color-hover:      false;
+@post-content-link-hover-decoration: false;
+
+// @post-content-a
+@post-content-a-label:                 'Post-Content - @{color-g-name}';
+@post-content-a-padding:               0.714em 0;
+@post-content-a-text-color:            false;
+@post-content-a-background:            @color-g;
+@post-content-a-font-size:             false;
+@post-content-a-link-color:            false;
+@post-content-a-link-decoration:       false;
+@post-content-a-link-color-hover:      false;
+@post-content-a-link-hover-decoration: false;
+
+
+
+// ----------------------------------------
+// POST-FOOTER REGIONS
+// ----------------------------------------
+
+// @post-footer
+@post-footer-label:                 'Post-Footer - Transparent';
+@post-footer-padding:               0.75em 0;
+@post-footer-text-color:            false;
+@post-footer-background:            false;
+@post-footer-font-size:             false;
+@post-footer-link-color:            false;
+@post-footer-link-decoration:       false;
+@post-footer-link-color-hover:      false;
+@post-footer-link-hover-decoration: false;
+
+// @post-footer-a
+@post-footer-a-label:                 'Post-Footer - @{color-a-name}';
+@post-footer-a-padding:               0.75em 0;
+@post-footer-a-text-color:            @color-h;
+@post-footer-a-background:            @color-a;
+@post-footer-a-font-size:             false;
+@post-footer-a-link-color:            false;
+@post-footer-a-link-decoration:       false;
+@post-footer-a-link-color-hover:      false;
+@post-footer-a-link-hover-decoration: false;
+
+
+
+// ----------------------------------------
+// PRE-CONTENT REGIONS
+// ----------------------------------------
+
+// @pre-content
+@pre-content-label:                  'Pre-Content - Transparent';
+@pre-content-padding:                false;
+@pre-content-color:                  false;
+@pre-content-background:             false;
+@pre-content-font-size:              false;
+@pre-content-link-color:             false;
+@pre-content-link-decoration:        false;
+@pre-content-link-color-hover:       false;
+@pre-content-link-hover-decoration:  false;
+
+// @pre-header
+@pre-header-label:                  'Pre-Header - Transparent';
+@pre-header-padding:                false;
+@pre-header-color:                  false;
+@pre-header-background:             false;
+@pre-header-font-size:              false;
+@pre-header-link-color:             false;
+@pre-header-link-decoration:        false;
+@pre-header-link-color-hover:       false;
+@pre-header-link-hover-decoration:  false;
+
+// @pre-header-a
+@pre-header-a-label:                  'Pre-Header - @{color-g-name}';
+@pre-header-a-padding:                0.4em 0;
+@pre-header-a-color:                  @color-f;
+@pre-header-a-background:             @color-g;
+@pre-header-a-font-size:              false;
+@pre-header-a-link-color:             @color-f;
+@pre-header-a-link-decoration:        none;
+@pre-header-a-link-color-hover:       false;
+@pre-header-a-link-hover-decoration:  underline;
+
+
+
+// ----------------------------------------
+// PRE-CONTENT REGIONS
+// ----------------------------------------
+
+// @shadow-a
+@shadow-a-label:      'Box Shadow Light';
+@shadow-a-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+// @shadow-b
+@shadow-b-label:      'Drop Shadow';
+@shadow-b-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
+
+
+
+
+
+// ----------------------------------------
+// ANIMATIONS
+// ----------------------------------------
+
+@animation-duration-medium:     1s;
+@animation-duration-slow:       1.5s;
+@animation-fill-mode:           both;
+@animation-delay-short:         .6s;
+@animation-delay-long:          1.5s;
+@animation-transform-origin:    top center;
+@animation-timing-default:      ease;
+@animation-transform-a:         scale(1,1);
+@animation-transform-b:         scale(1.05,1.07);
+@animation-transition:          0.25s ease-out;
+@animation-iteration-count:     infinite;
+@animation-backface-visibility: visible;
+@animation-visibility-true:   visible !important;
+
+
+// animation names -- these 'names' reference the keyframe mixins within the mixins.theme.less file
+@animation-name-bounce:               ~"ixp-bounce";
+@animation-name-tada:                 ~"ixp-tada";
+@animation-name-swing:                ~"ixp-swing";
+
+@animation-name-bounceInDown:         ~"ixp-bounceInDown";
+@animation-name-bounceInDown-Delay1:  ~"ixp-bounceInDown-Delay1";
+@animation-name-bounceInDown-Delay2:  ~"ixp-bounceInDown-Delay2";
+
+@animation-name-fadeIn:               ~"ixp-fadeIn";
+@animation-name-fadeInDown:           ~"ixp-fadeInDown";
+@animation-name-fadeInDown-Delay1:    ~"ixp-fadeInDown-Delay1";
+@animation-name-fadeInDown-Delay2:    ~"ixp-fadeInDown-Delay2";
+
+@animation-name-fadeInLeft:           ~"ixp-fadeInLeft";
+@animation-name-fadeInLeft-Delay1:    ~"ixp-fadeInLeft-Delay1";
+@animation-name-fadeInLeft-Delay2:    ~"ixp-fadeInLeft-Delay2";
+
+@animation-name-fadeInRight:          ~"ixp-fadeInRight";
+@animation-name-fadeInRight-Delay1:   ~"ixp-fadeInRight-Delay1";
+@animation-name-fadeInRight-Delay2:   ~"ixp-fadeInRight-Delay2";
+
+@animation-name-fadeInUp:             ~"ixp-fadeInUp";
+@animation-name-fadeInUp-Delay1:      ~"ixp-fadeInUp-Delay1";
+@animation-name-fadeInUp-Delay2:      ~"ixp-fadeInUp-Delay2";
+
+@animation-name-slideInDown:          ~"ixp-slideInDown";
+@animation-name-slideInLeft:          ~"ixp-slideInLeft";
+@animation-name-slideInRight:         ~"ixp-slideInRight";
+
+@animation-name-slideInUp:            ~"ixp-slideInUp";
+@animation-name-slideInUp-Delay1:     ~"ixp-slideInUp-Delay1";
+@animation-name-slideInUp-Delay2:     ~"ixp-slideInUp-Delay2";
+
+@animation-name-pulse:                ~"ixp-pulse";
+@animation-name-floating:             ~"ixp-floating";
+@animation-name-shake:                ~"ixp-shake";
+@animation-name-flip:                 ~"ixp-flip";
+
+
+// Animation Timers - (These are not micro-themes)
+
+@ixp-animated-duration:             @animation-duration-slow;
+@ixp-animated-fill-mode:            @animation-fill-mode;
+@ixp-animated-backface-visibility:  @animation-backface-visibility;
+
+@ixp-animatedDelay1-duration:             @animation-duration-slow;
+@ixp-animatedDelay1-fill-mode:            @animation-fill-mode;
+@ixp-animatedDelay1-delay:                @animation-delay-short;
+@ixp-animatedDelay1-backface-visibility:  @animation-backface-visibility;
+
+@ixp-animatedDelay2-duration:             @animation-duration-slow;
+@ixp-animatedDelay2-fill-mode:            @animation-fill-mode;
+@ixp-animatedDelay2-delay:                @animation-delay-long;
+@ixp-animatedDelay2-backface-visibility:  @animation-backface-visibility;
+
+
+// Animation Triggers - On Load Time Only
+
+// @bounce
+@ixp-animated-bounce-name:      @animation-name-bounce;
+@ixp-animated-bounce-bounce-1:  30px;
+@ixp-animated-bounce-bounce-2:  -15px;
+@animated-bounce-label:         'Bounce';
+
+// @tada
+@ixp-animated-tada-name:      @animation-name-tada;
+@ixp-animated-tada-scale-1:   0.9;
+@ixp-animated-tada-scale-2:   1;
+@ixp-animated-tada-scale-3:   1.1;
+@ixp-animated-tada-rotate-1:  -3deg;
+@ixp-animated-tada-rotate-2:  3deg;
+@ixp-animated-tada-rotate-3:  0deg;
+@animated-tada-label:         'Tada';
+
+// @swing
+@ixp-animated-swing-name:             @animation-name-swing;
+@ixp-animated-swing-transform-origin: @animation-transform-origin;
+@animated-swing-label:                'Swing';
+
+// Animation Triggers - Intro
+
+// @bounceInDown
+@ixp-animated-bounceInDown-name:        @animation-name-bounceInDown;
+@ixp-animated-bounceInDown-distance-1:  30px;
+@ixp-animated-bounceInDown-distance-2:  -10px;
+@animated-bounceInDown-label:           'Bounce In Down';
+
+@ixp-animatedDelay1-bounceInDown-name:        @animation-name-bounceInDown-Delay1;
+@ixp-animatedDelay1-bounceInDown-distance-1:  30px;
+@ixp-animatedDelay1-bounceInDown-distance-2:  -10px;
+@animated-Delay1bounceInDown-label:           'Bounce In Down (1s delay)';
+
+@ixp-animatedDelay2-bounceInDown-name:        @animation-name-bounceInDown-Delay2;
+@ixp-animatedDelay2-bounceInDown-distance-1:  30px;
+@ixp-animatedDelay2-bounceInDown-distance-2:  -10px;
+@animatedDelay2-bounceInDown-label:           'Bounce In Down (2s delay)';
+
+// @fadeIn
+@ixp-animated-fadeIn-name: @animation-name-fadeIn;
+@animated-fadeIn-label:    'Fade In';
+
+@ixp-animatedDelay1-fadeIn-name: @animation-name-fadeIn;
+@animatedDelay1-fadeIn-label:    'Fade In (1s delay)';
+
+@ixp-animatedDelay2-fadeIn-name: @animation-name-fadeIn;
+@animatedDelay2-fadeIn-label:    'Fade In (2s delay)';
+
+
+// @fadeInDown
+@ixp-animated-fadeInDown-name:    @animation-name-fadeInDown;
+@ixp-animated-fadeInDown-origin:  -20px;
+@animated-fadeInDown-label:       'Fade In Down';
+
+@ixp-animatedDelay1-fadeInDown-name:    @animation-name-fadeInDown-Delay1;
+@ixp-animatedDelay1-fadeInDown-origin:  -20px;
+@animatedDelay1-fadeInDown-label:       'Fade In Down (1s delay)';
+
+@ixp-animatedDelay2-fadeInDown-name:    @animation-name-fadeInDown-Delay2;
+@ixp-animatedDelay2-fadeInDown-origin:  -20px;
+@animatedDelay2-fadeInDown-label:       'Fade In Down (2s delay)';
+
+// @fadeInLeft
+@ixp-animated-fadeInLeft-name:    @animation-name-fadeInLeft;
+@ixp-animated-fadeInLeft-origin:  -20px;
+@animated-fadeInLeft-label:       'Fade In Left';
+
+@ixp-animatedDelay1-fadeInLeft-name:    @animation-name-fadeInLeft-Delay1;
+@ixp-animatedDelay1-fadeInLeft-origin:  -20px;
+@animatedDelay1-fadeInLeft-label:       'Fade In Left (1s delay)';
+
+@ixp-animatedDelay2-fadeInLeft-name:    @animation-name-fadeInLeft-Delay2;
+@ixp-animatedDelay2-fadeInLeft-origin:  -20px;
+@animatedDelay2-fadeInLeft-label:       'Fade In Left (2s delay)';
+
+// @fadeInRight
+@ixp-animated-fadeInRight-name:     @animation-name-fadeInRight;
+@ixp-animated-fadeInRight-origin:   20px;
+@animated-fadeInRight-label:      'Fade In Right';
+
+@ixp-animatedDelay1-fadeInRight-name:   @animation-name-fadeInRight-Delay1;
+@ixp-animatedDelay1-fadeInRight-origin: 20px;
+@animatedDelay1-fadeInRight-label:     'Fade In Right (1s delay)';
+
+@ixp-animatedDelay2-fadeInRight-name:   @animation-name-fadeInRight-Delay2;
+@ixp-animatedDelay2-fadeInRight-origin: 20px;
+@animatedDelay2-fadeInRight-label:      'Fade In Right (2s delay)';
+
+// @fadeInUp
+@ixp-animated-fadeInUp-name:    @animation-name-fadeInUp;
+@ixp-animated-fadeInUp-origin:  20px;
+@animated-fadeInUp-label:       'Fade In Up';
+
+@ixp-animatedDelay1-fadeInUp-name:    @animation-name-fadeInUp-Delay1;
+@ixp-animatedDelay1-fadeInUp-origin:  20px;
+@animatedDelay1-fadeInUp-label:       'Fade In Up (1s delay)';
+
+@ixp-animatedDelay2-fadeInUp-name:    @animation-name-fadeInUp-Delay2;
+@ixp-animatedDelay2-fadeInUp-origin:  20px;
+@animatedDelay2-fadeInUp-label:       'Fade In Up (2s delay)';
+
+// @slideInDown
+@ixp-animated-slideInDown-name:   @animation-name-slideInDown;
+@ixp-animated-slideInDown-timing: @animation-timing-default;
+@animated-slideInDown-label:      'Slide In Down';
+
+@ixp-animatedDelay1-slideInDown-name:   @animation-name-slideInDown;
+@ixp-animatedDelay1-slideInDown-timing: @animation-timing-default;
+@animatedDelay1-slideInDown-label:      'Slide In Down (1s delay)';
+
+@ixp-animatedDelay2-slideInDown-name:   @animation-name-slideInDown;
+@ixp-animatedDelay2-slideInDown-timing: @animation-timing-default;
+@animatedDelay2-slideInDown-label:      'Slide In Down (2s delay)';
+
+// @slideInLeft
+@ixp-animated-slideInLeft-name:   @animation-name-slideInLeft;
+@animated-slideInLeft-label:      'Slide In Left';
+
+@ixp-animatedDelay1-slideInLeft-name: @animation-name-slideInLeft;
+@animatedDelay1-slideInLeft-label:    'Slide In Left (1s delay)';
+
+@ixp-animatedDelay2-slideInLeft-name: @animation-name-slideInLeft;
+@animatedDelay2-slideInLeft-label:    'Slide In Left (2s delay)';
+
+// @slideInRight
+@ixp-animated-slideInRight-name: @animation-name-slideInRight;
+@animated-slideInRight-label:    'Slide In Right';
+
+@ixp-animatedDelay1-slideInRight-name: @animation-name-slideInRight;
+@animatedDelay1-slideInRight-label:    'Slide In Right (1s delay)';
+
+@ixp-animatedDelay2-slideInRight-name: @animation-name-slideInRight;
+@animatedDelay2-slideInRight-label:    'Slide In Right (2s delay)';
+
+// @slideInUp
+@ixp-animated-slideInUp-name:           @animation-name-slideInUp;
+@ixp-animated-slideInUp-timing:         @animation-timing-default;
+@ixp-animated-slideInUp-visibility:     @animation-visibility-true;
+@ixp-animated-slideInUp-distance-1:     -8%;
+@ixp-animated-slideInUp-distance-2:     4%;
+@ixp-animated-slideInUp-distance-3:     -4%;
+@ixp-animated-slideInUp-distance-4:     2%;
+@animated-slideInUp-label:              'Slide In Up';
+
+@ixp-animatedDelay1-slideInUp-name:           @animation-name-slideInUp-Delay1;
+@ixp-animatedDelay1-slideInUp-timing:         @animation-timing-default;
+@ixp-animatedDelay1-slideInUp-visibility:     @animation-visibility-true;
+@ixp-animatedDelay1-slideInUp-distance-1:     -8%;
+@ixp-animatedDelay1-slideInUp-distance-2:     4%;
+@ixp-animatedDelay1-slideInUp-distance-3:     -4%;
+@ixp-animatedDelay1-slideInUp-distance-4:     2%;
+@animatedDelay1-slideInUp-label:              'Slide In Up (1s delay)';
+
+
+@ixp-animatedDelay2-slideInUp-name:         @animation-name-slideInUp-Delay2;
+@ixp-animatedDelay2-slideInUp-timing:       @animation-timing-default;
+@ixp-animatedDelay2-slideInUp-visibility:   @animation-visibility-true;
+@ixp-animatedDelay2-slideInUp-distance-1:   -8%;
+@ixp-animatedDelay2-slideInUp-distance-2:   4%;
+@ixp-animatedDelay2-slideInUp-distance-3:   -4%;
+@ixp-animatedDelay2-slideInUp-distance-4:   2%;
+@animatedDelay2-slideInUp-label:            'Slide In Up (2s delay)';
+
+// Animation Hover
+
+// @hover-zoom
+@ixp-hover-zoom-transform:        @animation-transform-a;
+@ixp-hover-zoom-transform-hover:  @animation-transform-b;
+@ixp-hover-zoom-transition:       @animation-transition;
+@animated-hover-zoom-label:      'Hover Zoom';
+
+// @ hover-plus
+@ixp-hover-pulse-duration:    @animation-duration-medium;
+@ixp-hover-pulse-fill-mode:   @animation-fill-mode;
+@ixp-hover-pulse-name:        @animation-name-pulse;
+@ixp-hover-pulse-scale:       1.1;
+@animated-hover-pulse-label:  'Hover Pulse';
+
+// @hover-float
+@ixp-hover-float-duration:        @animation-duration-slow;
+@ixp-hover-float-iteration-count: @animation-iteration-count;
+@ixp-hover-float-fill-mode:       @animation-fill-mode;
+@ixp-hover-float-name:            @animation-name-floating;
+@ixp-hover-pulse-float:           8%;
+@animated-hover-float-label:      'Hover Float';
+
+// @hover-bounce
+@ixp-hover-bounce-duration:   @animation-duration-slow;
+@ixp-hover-bounce-fill-mode:  @animation-fill-mode;
+@ixp-hover-bounce-name:       @animation-name-bounce;
+@ixp-hover-bounce-bounce-1:   -30px;
+@ixp-hover-bounce-bounce-2:   -15px;
+@animated-hover-bounce-label: 'Hover Bounce';
+
+// @hover-shake
+@ixp-hover-shake-duration:    @animation-duration-slow;
+@ixp-hover-shake-fill-mode:   @animation-fill-mode;
+@ixp-hover-shake-name:        @animation-name-shake;
+@ixp-hover-shake-shakeamount: 10px;
+@animated-hover-shake-label:  'Hover Shake';
+
+// @hover-flip
+@ixp-hover-flip-duration:             @animation-duration-slow;
+@ixp-hover-flip-fill-mode:            @animation-fill-mode;
+@ixp-hover-flip-backface-visibility:  @animation-backface-visibility;
+@ixp-hover-flip-name:                 @animation-name-flip;
+@animated-hover-flip-label:           'Hover Flip';
+
+

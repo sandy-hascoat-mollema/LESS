@@ -1,0 +1,29 @@
+
+/*-------------------
+Hover Animation
+------------------- */
+
+//.animation-duration(@duration)
+//.animation-iteration-count(@iteration-count)
+//.animation-fill-mode(@fill-mode)
+//.animation-name(@animation-name)
+
+.ixp-hover-float {
+  .animation-duration(@ixp-hover-float-duration);
+  .animation-iteration-count(@ixp-hover-float-iteration-count);
+  .animation-fill-mode(@ixp-hover-float-fill-mode);
+
+  .ixp-hover-float:hover {
+    .animation-name(@ixp-hover-float-name);
+  }
+}
+
+//.keyframe-floating(@name, @float)
+
+.keyframe-floating(@ixp-hover-float-name, @ixp-hover-pulse-float);
+
+/* ======================================
+	animation-hover-float IXP Information
+====================================== */
+
+.ixp-hover-float {.ixp-animations(@animated-hover-float-label);}

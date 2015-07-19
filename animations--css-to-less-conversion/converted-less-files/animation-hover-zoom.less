@@ -1,0 +1,25 @@
+
+/*-------------------
+Hover Animation
+------------------- */
+
+//.transform(@transform)
+//.transform-transition(@transition)
+
+.ixp-hover-zoom {
+  .transform(@ixp-hover-zoom-transform);
+  .transform-transition(@ixp-hover-zoom-transition);
+
+  .ixp-hover-zoom:hover {
+    .transform(@ixp-hover-zoom-transform-hover);
+    .transform-transition(@ixp-hover-zoom-transition);
+  }
+}
+
+
+
+/* ======================================
+	animation-hover-zoom IXP Information
+====================================== */
+
+.ixp-hover-zoom {.ixp-animations(@animated-hover-zoom-label);}

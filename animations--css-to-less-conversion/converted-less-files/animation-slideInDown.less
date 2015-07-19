@@ -1,0 +1,23 @@
+
+/*-------------------
+Animation Triggers - Intros
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+//.animation-timing(@timing-type)
+
+.ixp-animated.ixp-slideInDown {
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-slideInDown-name);
+  .animation-timing(@ixp-animated-slideInDown-timing);
+}
+
+//.keyframe-slideInDown() -- no editable params -- name should be the same as .animation-name() above.
+.keyframe-slideInDown(@ixp-animated-slideInDown-name);
+
+/* ======================================
+	animation-slideInDown IXP Information
+====================================== */
+
+.ixp-animated.ixp-slideInDown {.ixp-animations(@animated-slideInDown-label);}

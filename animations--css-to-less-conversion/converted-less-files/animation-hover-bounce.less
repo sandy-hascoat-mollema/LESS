@@ -1,0 +1,27 @@
+
+/*-------------------
+Hover Animation
+------------------- */
+
+//.animation-duration(@duration)
+//.animation-fill-mode(@fill-mode)
+//.animation-name(@animation-name)
+
+.ixp-hover-bounce {
+  .animation-duration(@ixp-hover-bounce-duration);
+  .animation-fill-mode(@ixp-hover-bounce-fill-mode);
+
+  .ixp-hover-bounce:hover {
+    .animation-name(@ixp-hover-bounce-name);
+  }
+}
+
+//.keyframe-bounce(@name, @bounce-1, @bounce-2)
+.keyframe-bounce(@ixp-hover-bounce-name, @ixp-hover-bounce-bounce-1, @ixp-hover-bounce-bounce-2);
+
+
+/* ======================================
+	animation-hover-bounce IXP Information
+====================================== */
+
+.ixp-hover-bounce {.ixp-animations(@animated-hover-bounce-label);}

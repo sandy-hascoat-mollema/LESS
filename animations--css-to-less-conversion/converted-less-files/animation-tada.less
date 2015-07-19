@@ -1,0 +1,22 @@
+/*-------------------
+Animation Triggers - On Load Time Only
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+
+.ixp-animated.ixp-tada {
+  .ixp-animated(@ixp-animated-duration);
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-tada-name);
+}
+
+//.keyframe-tada(@name, @scale-1, @scale-2, @scale-3, @rotate-1, @rotate-2, @rotate-3)
+
+.keyframe-tada(@ixp-animated-tada-name, @ixp-animated-tada-scale-1, @ixp-animated-tada-scale-2, @ixp-animated-tada-scale-3, @ixp-animated-tada-rotate-1, @ixp-animated-tada-rotate-2, @ixp-animated-tada-rotate-3);
+
+/* ======================================
+	animation-tada IXP Information
+====================================== */
+
+.ixp-animated.ixp-tada {.ixp-animations(@animated-tada-label);}

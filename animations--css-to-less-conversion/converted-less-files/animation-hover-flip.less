@@ -1,0 +1,29 @@
+
+/*-------------------
+Hover Animation
+------------------- */
+
+//.animation-duration(@duration)
+//.animation-fill-mode(@fill-mode)
+//.animation-name(@animation-name)
+//.backface-visibility(@visibility)
+
+.ixp-hover-flip {
+  .animation-duration(@ixp-hover-flip-duration);
+  .animation-fill-mode(@ixp-hover-flip-fill-mode);
+
+  .ixp-hover-flip:hover {
+    .backface-visibility(@ixp-hover-flip-backface-visibility);
+    .animation-name(@ixp-hover-flip-name);
+  }
+
+}
+
+//.keyframe-flip() -- no editable params -- name should be the same as .animation-name() above.
+.keyframe-flip(@ixp-hover-flip-name);
+
+/* ======================================
+	animation-hover-float IXP Information
+====================================== */
+
+.ixp-hover-flip {.ixp-animations(@animated-hover-flip-label);}

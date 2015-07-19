@@ -1,0 +1,21 @@
+/*-------------------
+Animation Triggers - On Load Time Only
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+
+.ixp-animated.ixp-bounce {
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-bounce-name);
+}
+
+//.keyframe-bounce(@name, @bounce-1, @bounce-2)
+
+.keyframe-bounce(@ixp-animated-bounce-name, @ixp-animated-bounce-bounce-1, @ixp-animated-bounce-bounce-2);
+
+/* ======================================
+	animation-bounce IXP Information
+====================================== */
+
+.ixp-animated.ixp-bounce {.ixp-animations(@animated-bounce-label);}

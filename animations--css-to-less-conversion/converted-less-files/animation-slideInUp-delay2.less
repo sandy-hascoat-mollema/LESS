@@ -1,0 +1,23 @@
+
+/*-------------------
+Animation Triggers - Intros
+------------------- */
+
+//.animation-name(@animation-name)
+//.animation-timing(@timing-type)
+
+.ixp-animatedDelay2.ixp-slideInUp {
+  .animation-name(@ixp-animatedDelay2-slideInUp-name);
+  .animation-timing(@ixp-animatedDelay2-slideInUp-timing);
+  visibility: @ixp-animatedDelay2-slideInUp-visibility;
+}
+
+//.keyframe-slideInUp(@name, @distance-1, @distance-2, @distance-3, @distance-4)
+
+.keyframe-slideInUp(@ixp-animatedDelay2-slideInUp-name, @ixp-animatedDelay2-slideInUp-distance-1, @ixp-animatedDelay2-slideInUp-distance-2, @ixp-animatedDelay2-slideInUp-distance-3, @ixp-animatedDelay2-slideInUp-distance-4);
+
+/* ======================================
+	animation-slideInUp-delay2 IXP Information
+====================================== */
+
+.ixp-animatedDelay2.ixp-slideInUp {.ixp-animations(@animatedDelay2-slideInUp-label);}

@@ -1,0 +1,22 @@
+
+/*-------------------
+Animation Triggers - Intros
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+
+.ixp-animated.ixp-fadeInUp {
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-fadeInUp-name);
+}
+
+//.keyframe-fadeInUp(@name, @origin)
+
+.keyframe-fadeInUp(@ixp-animated-fadeInUp-name, @ixp-animated-fadeInUp-origin);
+
+/* ======================================
+	animation-fadeInUp IXP Information
+====================================== */
+
+.ixp-animated.ixp-fadeInUp {.ixp-animations(@animated-fadeInUp-label);}

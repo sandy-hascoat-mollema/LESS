@@ -1,0 +1,23 @@
+/*-------------------
+Animation Triggers - On Load Time Only
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+//.transform-origin(@transform-origin)
+
+.ixp-animated.ixp-swing {
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-swing-name);
+  .transform-origin(@ixp-animated-swing-transform-origin);
+}
+
+//.keyframe-swing(@name, @rotate-1, @rotate-2, @rotate-3, @rotate-4)
+
+.keyframe-swing(@ixp-animated-swing-name, 15deg, -10deg, 5deg, -5deg);
+
+/* ======================================
+	animation-swing IXP Information
+====================================== */
+
+.ixp-animated.ixp-swing {.ixp-animations(@animated-swing-label);}

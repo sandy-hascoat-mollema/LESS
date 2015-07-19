@@ -1,0 +1,22 @@
+
+/*-------------------
+Animation Triggers - Intros
+------------------- */
+
+//.ixp-animated(@duration)
+//.animation-name(@animation-name)
+
+.ixp-animated.ixp-bounceInDown {
+  .ixp-animated(@ixp-animated-duration);
+  .animation-name(@ixp-animated-bounceInDown-name);
+}
+
+//.keyframe-bounceInDown(@name, @origin-1, @origin-2)
+
+.keyframe-bounceInDown(@ixp-animated-bounceInDown-name, @ixp-animated-bounceInDown-distance-1, @ixp-animated-bounceInDown-distance-2);
+
+/* ======================================
+	animation-bounceInDown IXP Information
+====================================== */
+
+.ixp-animated.ixp-bounceInDown {.ixp-animations(@animated-bounceInDown-label);}

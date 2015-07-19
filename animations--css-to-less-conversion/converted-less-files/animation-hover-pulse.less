@@ -1,0 +1,26 @@
+
+/*-------------------
+Hover Animation
+------------------- */
+
+//.animation-duration(@duration)
+//.animation-fill-mode(@fill-mode)
+//.animation-name(@animation-name)
+
+.ixp-hover-pulse {
+  .animation-duration(@ixp-hover-pulse-duration);
+  .animation-fill-mode(@ixp-hover-pulse-fill-mode);
+
+  .ixp-hover-pulse:hover {
+    .animation-name(@ixp-hover-pulse-name);
+  }
+}
+
+//.keyframe-pulse(@name, @scale)
+.keyframe-pulse(@ixp-hover-pulse-name, 1.1);
+
+/* ======================================
+	animation-hover-pulse IXP Information
+====================================== */
+
+.ixp-hover-pulse {.ixp-animations(@animated-hover-pulse-label);}

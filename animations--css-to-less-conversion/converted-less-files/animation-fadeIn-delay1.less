@@ -1,0 +1,19 @@
+
+/*-------------------
+Animation Triggers - Intros
+------------------- */
+
+//.animation-name(@animation-name)
+
+.ixp-animatedDelay1.ixp-fadeIn {
+  .animation-name(@ixp-animatedDelay1-fadeIn-name);
+}
+
+//.keyframe-fadeIn() -- no editable params -- name should be the same as .animation-name() above.
+.keyframe-fadeIn(@ixp-animatedDelay1-fadeIn-name);
+
+/* ======================================
+	animation-fadeIn-delay1 IXP Information
+====================================== */
+
+.ixp-animatedDelay1.ixp-fadeIn {.ixp-animations(@animatedDelay1-fadeIn-label);}
