@@ -1,0 +1,44 @@
+// ========================================================
+// GLOBAL VARS
+// ========================================================
+
+@lt-ie9:            ~'.ixp-experience.ixp-lt-ie9';
+@gte-ie9:           ~'.ixp-experience:not(.ixp-lt-ie9)';
+@form-image-path:   '/Global/UxPlugins/ixp-form/images/';
+
+@arial:             ~'Arial, Helvetica, sans-serif';
+
+@no-touch:          ~'.ixp-mzr-no-touch';
+@touch:             ~'.ixp-mzr-touch';
+
+@video-component:  ~'.ixp-component-video';
+
+// ========================================================
+// CREATIVE STUDIO
+// ========================================================
+
+@studio-font-family:                jaf-facitweb, Helvetica, Arial, sans-serif;
+@studio-font-weight:                300;
+@in-studio:                         ~'html.ixp-in-studio';
+@not-in-studio:                     ~'html:not(.ixp-in-studio)';
+@in-studio-placeholders:            ~'@{in-studio}.pe-page-placeholders-shown';
+@in-studio-placeholders-advanced:   ~'@{in-studio}.pe-page-placeholders-advanced';
+@in-snapshot:                       ~'html.ixp-in-snapshot';
+@prevent-animations:                ~'html.ixp-prevent-animations';
+
+// ========================================================
+// COLORS
+// ========================================================
+
+@ixp-active-color: #2392F3;
+
+.support-lt-ie9(@rules, @wrap: true) when (@support-lt-ie9) {
+    & when (@wrap) {
+        @{lt-ie9} & {
+            @rules();
+        }
+    }
+    & when not (@wrap) {
+        @rules();
+    }
+}
