@@ -1,0 +1,184 @@
+/* ======================================
+	Pods
+    REQUIRED CLASS: .pod, .pod-a, .pod-b, .pod-c, .pod.form-pod-a
+    NOTE: .pod, .pod-b, .pod-c style values should not change. 
+    They should be Transparent (.pod), Transparent White (.pod-b) and Transparent Black (.pod-c) always.
+====================================== */
+
+.pod {
+    padding: @pod-padding;
+    
+    &.pod-a {
+        background: @color-white;
+    }
+
+    &.pod-b {
+        background: @color-white;
+        background: rgba(255, 255, 255, .60);        
+    }
+
+    &.pod-c {
+        background: @color-black;
+        background: rgba(0, 0, 0, .60);
+        color: @color-white;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @color-white;
+        }
+        a {
+            color: @color-white;            
+            &:hover {
+                color: @color-white;
+            }
+        }
+    }
+
+    &.pod-d {
+        background: @color-black;
+        color: @color-white;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @color-white;
+        }
+        a {
+            color: @color-white;            
+            &:hover {
+                color: @color-white;
+            }
+        }
+        
+    }
+
+    &.pod-e {
+        background: @pod-e-bg;
+        color: @pod-e-color;
+
+        a,
+        &@{nested-1} a,
+        &@{nested-2} a {
+            color: @pod-e-link-color;
+            
+            &:hover {
+                color: @pod-e-link-color-hover;
+            }
+        }
+
+        h3,
+        &@{nested-1} h3,
+        &@{nested-2} h3 {
+            color: @color-f;
+        }
+    }
+
+    &.pod-f {
+        background: @pod-f-bg;
+        color: @pod-f-color;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @pod-f-color;
+        }
+        a {
+            color:@pod-f-link-color;           
+            &:hover {
+                color: @pod-f-link-color-hover;
+            }
+        }
+    }
+
+    
+
+    &.pod-g {
+        background: @pod-g-bg;
+        color: @pod-g-color;      
+    }
+}
+
+/* ======================================
+	Pods with Form Styling
+
+	REQUIRED CLASS: .pod.form-pod-a
+====================================== */
+
+.pod {
+    &.form-pod-a {
+        background: @form-pod-a-bg;
+        color: @form-pod-a-color;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @form-pod-a-color;
+        }
+        a {
+            color:@form-pod-a-link-color;           
+            &:hover {
+                color: @form-pod-a-link-color-hover;
+            }
+        }
+    }
+
+    &.form-pod-b {
+        background: @form-pod-b-bg;
+        color: @form-pod-b-color;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @form-pod-b-color;
+        }
+        a {
+            color:@form-pod-b-link-color;           
+            &:hover {
+                color: @form-pod-b-link-color-hover;
+            }
+        }
+    }
+
+    
+
+    &.form-pod-c {
+        background: @form-pod-c-bg;
+        color: @form-pod-c-color;
+        
+        h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @form-pod-c-color;
+        }
+        a {
+            color:@form-pod-c-link-color;           
+            &:hover {
+                color: @form-pod-c-link-color-hover;
+            }
+        }
+    }
+
+    
+}
+
+
+/* ======================================
+	Pod IXP Information
+
+	REQUIRED CLASS: .pod, .pod-a, .pod.form-pod-a
+====================================== */
+
+.pod { .ixp-pod("Transparent"); }
+.pod.pod-a { .ixp-pod("@{color-white-name} Pod"); }
+.pod.pod-b { .ixp-pod("@{color-white-name} Transparent Pod"); }
+.pod.pod-c { .ixp-pod("@{color-black-name} Transparent Pod");}
+.pod.pod-d { .ixp-pod("@{color-black-name} Pod"); }
+.pod.pod-e { .ixp-pod("@{pod-e-name} Pod"); }
+.pod.pod-f { .ixp-pod("@{pod-f-name} Pod"); }
+.pod.pod-g { .ixp-pod("@{pod-g-name} Pod"); }
+
+
+.pod.form-pod-a { .ixp-pod("@{form-pod-a-name} Form Pod"); }
+.pod.form-pod-b { .ixp-pod("@{form-pod-b-name} Form Pod"); }
+.pod.form-pod-c { .ixp-pod("@{form-pod-c-name} Form Pod"); }

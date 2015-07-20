@@ -1,0 +1,46 @@
+/* ======================================
+	Image and Block Styling
+
+	REQUIRED CLASS: .shadow-a
+====================================== */
+
+.shadow-a {
+  .box-shadow(@shadow-a);
+}
+
+.shadow-b {
+   .box-shadow(@shadow-b);
+}
+
+.image-border-radius-a {
+   .border-radius(@border-radius-styling);
+}
+
+.image-borders-a {
+   border: @border-a-width solid @border-a-color;
+}
+
+/* ======================================
+	Image and Block IXP Information
+    REQUIRED CLASSES: .shadow-a
+====================================== */
+
+.shadow-a  {.ixp-styling("@shadow-a-name");}
+.shadow-b {.ixp-styling("@shadow-b-name");}
+.image-border-radius-a {.ixp-styling2("Rounded Corners");}
+.image-borders-a {.ixp-styling3("Border @border-a-name");}
+
+/* ======================================
+	Horizontal Rule Styling
+====================================== */
+
+hr {
+    background: @hr-color;
+    border: none;
+    color: @hr-color;
+    clear: both;
+    float: none;
+    height: @hr-height;
+    margin: 0.4em 0;
+    width: 100%;
+}

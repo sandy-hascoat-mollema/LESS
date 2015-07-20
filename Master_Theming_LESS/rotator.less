@@ -1,0 +1,56 @@
+/* ======================================
+	Rotator RMW
+====================================== */
+
+.lbui_rotator_v3 {
+    .lbui_controls.lbui_align_below {
+        bottom: 0 !important;
+    }
+    
+    .lbui_nav.lbui_align_below {
+	bottom: -40px !important;
+    }
+
+    .lbui_align_below {
+
+        .lbui_prev,
+        .lbui_next {
+            background: @rotator-arrow-color !important;
+            border-radius: none !important;
+            border: @rotator-arrow-border !important;
+            color: @color-white !important;
+            text-shadow: none !important;
+            
+            &:hover {
+                background: @rotator-arrow-color-hover !important;
+                border: @rotator-arrow-border !important;
+                color: @color-white !important;
+            }
+        }
+    }
+
+    // numbers
+    .lbui_nav:not(.lbui_dots) {
+
+		.lbui_align_below {
+			bottom: 0;
+		}
+
+        // numbers
+        .lbui_toggle {
+            background: @rotator-dot-inactive !important;
+            border-radius: none !important;
+            text-shadow: none !important;
+
+            &.lbui_active {
+                background: @rotator-dot-active !important;
+                cursor: default;
+            }
+
+            &:hover {
+                background: @rotator-dot-hover !important;
+                .box-shadow(none) !important;
+            }
+        }
+    }
+}

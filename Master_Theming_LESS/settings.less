@@ -1,0 +1,607 @@
+// ====================================================================================
+//  SETTINGS INFO:
+//
+//  This is where all the basic theme settings get changed. Use generic names globally
+//  and reference those to specific names within this file. (E.g., @color-a is global,
+//  @color-blue is a specific color setting. So @color-a = @color-blue in this file.)
+//
+//  Reference for CSS3: http://css3generator.com/
+// ====================================================================================
+
+// ======================================
+//	Page Defaults
+// ======================================
+
+@font-family-base:          'Open Sans', sans-serif;
+@font-size-base-px:         14px; // all theme font em is based on this (1em = n:px);
+@font-size-base-em:         0.9em; // Default font size (0.9em from 14px =
+@font-color-base:           @color-c; // Default text color for all page
+@background-color-base:     @color-white; //Color for Body BG
+
+
+// ======================================
+//	Fonts
+// ======================================
+
+@font-family-a:             'Open Sans', sans-serif;
+@font-family-b:             'Ovo', serif;
+@font-family-c:             'Arial', Helvetica, sans-serif;
+@font-family-d:             'Arial', Helvetica, sans-serif;
+
+@font-weight-regular:       400; //These may need to be removed completely if your font does not have weights like this
+@font-weight-semi-bold:     600;
+@font-weight-bold:          700;
+
+@font-a-name:               'Open Sans Regular';
+@font-b-name:               'Ovo';
+@font-c-name:               'Arial';
+
+@font-size-default:          0.9em;
+@font-size-input:            0.8em;
+@font-size-h1:               2.6em;
+@font-size-h2:               1.7em;
+@font-size-h3:               1.4em;
+@font-size-h4:               1.2em;
+@font-size-h5:               1em;
+@font-size-h6:               0.8em;
+@font-size-caption:          0.85em;
+@font-size-fineprint:        0.75em;
+
+@color-h1:      @color-f;
+@color-h2:      @color-e;
+@color-h3:      @color-b;
+@color-h4:      @color-e;
+@color-h5:      @color-e;
+
+// ====================================================================================
+//  Specify default line height as a pure number value (no px/em), adjusting the value
+//  as desired. This will allow the line-height to flex depending on what size the user
+//  specifies their text within the rich text editor.
+// ====================================================================================
+
+@line-height-base:          1.64;
+
+// ======================================
+//	Swatches - For refernce in font and background colors
+// ======================================
+
+@color-white:                     #FFF; //do not change or remove
+@color-black:                     #000; //do not change or remove
+
+@color-a:                   #aaa;
+@color-b:                   #666;
+@color-c:                   #444;
+@color-d:                   #9FAEB9;
+@color-e:                   #465C6B;
+@color-f:                   #293944;
+@color-g:                   #e8e8e8;
+@color-h:                   #f8f8f8;
+
+@color-white-name:           'White';
+@color-black-name:           'Black';
+
+@color-a-name:              'Medium Gray';
+@color-b-name:              'Dark Gray';
+@color-c-name:              'Darker Gray';
+@color-d-name:              'Light Blue';
+@color-e-name:              'Medium Blue';
+@color-f-name:              'Dark Blue';
+@color-g-name:              'Light Gray';
+@color-h-name:              'Lightest Gray';
+
+@error:                     #DB4056; //form error color. Add additional if needed for micro-theme variations 
+
+// ======================================
+//	Pods
+// ======================================
+
+// Pods
+@pod-padding:       0.85em;
+
+//pod a, pod b, pod c, and pod d should not be changed and therefore do not have variables
+
+@pod-e-bg:                   @color-g;
+@pod-e-color:                @color-a;
+@pod-e-link-color:           @color-e;
+@pod-e-link-color-hover:     @color-e;
+@pod-e-name:                 'color-g-name';
+
+@pod-f-bg:                   @color-e;
+@pod-f-color:                @color-white;
+@pod-f-link-color:           @color-white;
+@pod-f-link-color-hover:     @color-g;
+@pod-f-name:                 'color-e-name';
+
+@pod-g-bg:                   @color-g;
+@pod-g-color:                inherit;
+@pod-g-link-color:           inherit;
+@pod-g-link-color-hover:     inherit;
+@pod-g-name:                 'color-g-name';
+
+@form-pod-a-bg:                   @color-f;
+@form-pod-a-color:                @color-white;
+@form-pod-a-link-color:           @color-white;
+@form-pod-a-link-color-hover:     @color-g;
+@form-pod-a-name:                 'color-f-name';
+
+@form-pod-b-bg:                   @color-b;
+@form-pod-b-color:                @color-white;
+@form-pod-b-link-color:           @color-white;
+@form-pod-b-link-color-hover:     @color-g;
+@form-pod-b-name:                 'color-b-name';
+
+@form-pod-c-bg:                   @color-e;
+@form-pod-c-color:                @color-white;
+@form-pod-c-link-color:           @color-white;
+@form-pod-c-link-color-hover:     @color-white;
+@form-pod-c-name:                 'color-e-name';
+@form-pod-c-btn-color:            @btn-color-b;
+@form-pod-c-btn-color-hover:      @btn-color-b-hover;
+
+// ======================================
+//	Styling
+// ======================================
+
+@shadow-a:                  2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+@shadow-a-name:             'Light Drop Shadow';
+
+@shadow-b:                  2px 2px 0 0 rgba(0,0,0,.5);            
+@shadow-b-name:             'Flat Drop Shadow';
+
+@border-radius-styling:     5px;
+
+@border-a-name:             @color-c-name;
+@border-a-width:            1px;
+@border-a-color:            @color-c;
+
+@hr-color:                  @color-a;
+@hr-height:                 1px;
+
+// ======================================
+//	Link - Default
+// ======================================
+
+@link-color:                @color-b;
+@link-hover-color:          @color-c;
+
+@link-transition:           background 0.3s ease;
+
+@link-text:                  none;  // For text decoration. Underline or none
+@link-hover-text:            none;  // For text decoration. Underline or none
+
+// ======================================
+//	CTA Links
+// ======================================
+
+@cta-link-text:                  none;  // For text decoration
+@cta-link-hover-text:            underline;
+
+@icon-cta-spacing:          ~'1.2em';  // default spacing between icon and text
+
+@cta-pos-x:                ~'100%';    // default cta icon horizontal placement
+@cta-pos-y:                ~'48%';     // default cta icon vertical placement
+
+@cta-icon-a-color:          @color-f;
+@cta-icon-a-color-hover:    @color-d;
+@cta-icon-a-name:           'CTA Arrow';
+@cta-icon-a:                'icon_arrow-sm-a.png';
+
+@cta-icon-b-color:          @color-f;
+@cta-icon-b-color-hover:    @color-d;
+@cta-icon-b-name:           'CTA Cue';
+@cta-icon-b:                 'icon_cue-sm-a.png';
+
+@cta-icon-c-color:          @color-f;
+@cta-icon-c-color-hover:    @color-d;
+@cta-icon-c-name:           'CTA Carrot';
+@cta-icon-c:                'icon_carrot-sm-a.png';
+
+// ======================================
+//	Button Styles
+// ======================================
+
+@btn-margin:                0.5em 0;
+@btn-border:                none;
+@btn-transition:            background 0.3s ease;
+
+@btn-color-a:               @color-e;
+@btn-color-a-hover:         @color-d;
+@btn-text-a:                @color-white;
+@button-a-name:             'Cadet Blue';
+
+@btn-color-b:               @color-black;
+@btn-color-b-hover:         @color-b;
+@btn-text-b:                @color-white;
+@button-b-name:             'Black';
+@btn-border-radius:         true;  //By default, this will only apply to button-b.
+
+// ======================================
+//	Button Sizes
+// ======================================
+
+@size-a-font-size:          0.929em;
+@size-b-font-size:          1.143em;
+@size-c-font-size:          1.286em;
+@size-d-font-size:          1.286em;
+
+@size-a-padding:            0.5em 1.83em;
+@size-b-padding:            0.5em 2.15em; 
+@size-c-padding:            0.5em 2.667em; 
+@size-d-padding:            0.5em;
+
+@size-d-line-height:        1.4;
+
+@size-a:                    ~'small';
+@size-b:                    ~'medium';
+@size-c:                    ~'large';
+@size-d:                    ~'wide';
+
+// ======================================
+//	Button Icons
+// ======================================
+
+@icon-btn-x:                ~'10px';    // default button icon horizontal placement
+@icon-btn-y:                ~'48%';     // default button icon vertical placement
+
+@icon-btn-a-URL:         'icon_check.png';
+@icon-btn-a-LABEL:          ~'checked'; //descriptive label name here i.e. checked
+@icon-btn-a:                @icon-btn-a-LABEL;
+
+@icon-btn-b-URL:           'icon_cue.png';
+@icon-btn-b-LABEL:          ~'arrow';
+@icon-btn-b:                @icon-btn-b-LABEL;
+
+@icon-btn-c-URL:         'icon_phone.png';
+@icon-btn-c-LABEL:          ~'phone';
+@icon-btn-c:                @icon-btn-c-LABEL;
+
+@icon-btn-d-URL:      'icon_download.png';
+@icon-btn-d-LABEL:          ~'download';
+@icon-btn-d:                @icon-btn-d-LABEL;
+
+// ======================================
+//	Button Icon Padding
+// ======================================
+
+@size-a-icon-padding:             ~'0.5em 2.033em 0.5em 2.8em';
+@size-b-icon-padding:             ~'0.5em 2.250em 0.5em 2.8em';
+@size-c-icon-padding:             ~'0.5em 2.767em 0.5em 3.0em';
+@size-d-icon-padding:             ~'0.5em 0.5em 0.5em 2.1em';
+
+// ======================================
+//	Bullets
+// ======================================
+
+@li-margin:                 10px 0 10px 20px;
+@li-style:                  disc;
+
+@ol-margin:                 10px;
+@ol-style:                  decimal;
+
+@icon-bullet-x:             ~'0';       // default bullet icon horizontal placement
+@icon-bullet-y:             ~'50%';  // default bullet icon vertical placement
+@icon-bullet-space:         ~'1.5em';   // space between bullet and text
+
+@li-a-URL:                   'icon_circle-sm.png';
+@icon-bullet-a:             @li-a-URL;
+@bullet-a-name:             'Bullet List - Circle';
+
+@li-b-URL:                  'icon_check-sm.png';
+@icon-bullet-b:             @li-b-URL;
+@bullet-b-name:             'Bullet List - Checkmark';
+
+// ======================================
+//	Logo
+// ======================================
+
+@logo-a-URL:                'logo_white.png';
+@logo-a-sm-URL:             'logo_white_small.png';
+@logo-a-height:             ~'85px';
+@logo-a-width:              ~'152px';
+@logo-a-sm-height:          ~'50px'; // if alternate image is being used for tablet/mobile
+@logo-a-sm-width:           ~'90px'; // if alternate image is being used for tablet/mobile
+@logo-a-name:               'Header Logo - White';
+
+@logo-b-URL:                'logo_dark.png';
+@logo-b-sm-URL:             'logo_dark_Small.png'; // include alternate image for tablet/mobile version if needed
+@logo-b-height:             ~'85px';
+@logo-b-width:              ~'152px';
+@logo-b-sm-height:          ~'50px'; // if alternate image is being used for tablet/mobile
+@logo-b-sm-width:           ~'90px'; // if alternate image is being used for tablet/mobile
+@logo-b-name:               'Header Logo - Dark';
+
+
+// ======================================
+//	Regions
+// ======================================
+
+@pre-header-padding:        0.25 0;
+
+@pre-header-a-name:         '@color-g-name';
+@pre-header-a-bg:           @color-g;
+@pre-header-a-color:        @color-f;
+@pre-header-a-link:         @color-f;
+
+@header-padding:            1.563em 0;
+
+@header-a-name:         '@color-a-name';
+@header-a-padding:      1em 0;
+@header-a-bg:           @color-a;
+@header-a-color:        @color-white;
+@header-a-link:         @color-white;
+@header-a-link-hover:   @color-d;
+
+@innercontent-a-name:   '@color-a-name';
+@innercontent-a-bg:     @color-white;
+
+@pre-content-padding:   0;
+
+@content-padding:       1em 0;
+
+@post-content-padding:  0.714em 0;
+
+@post-content-a-bg:     @color-g;
+@post-content-a-name:   '@color-g-name';
+
+@footer-padding:        1em 0;
+@footer-font-size:      0.9em;
+
+@footer-a-bg:           @color-c;
+@footer-a-color:        @color-white;
+@footer-a-link:         @color-white;
+@footer-a-link-hover:   @color-g;
+@footer-a-name:         '@color-c-name';
+
+@post-footer-padding:   0.75em 0;
+
+@post-footer-a-bg:      @color-a;
+@post-footer-a-color:   @color-h;
+@post-footer-a-name:    '@color-a-name';
+
+
+// ======================================
+//	Navigation
+// ======================================
+
+//Overall nav styles
+@nav-background:                 transparent;  // Entire Nav BG Color
+@nav-color:                      @color-white; //Text and link color for nav
+@nav-font-size:                 1em;
+@nav-margin:                    0;
+@nav-padding:                   0;
+@nav-text-align:                center;
+@nav-float:                     right; //Floats navigation container to the right side
+
+//Navitem (li) styles
+@navitem-float:             left; //Floats the lis within the nav UL to the left or right. Avoid setting this to right, choose left, none, or inherit.
+@navitem-border:            true; //Will add a border to the right of the link that is the same color as @nav-color
+
+//Navlink (a) styles
+@navlink-padding:           0.75em 0.9em;
+@navlink-background:        transparent;
+@navlink-background-hover:  rgba(0, 0, 0, 0.35);
+@navlink-color-hover:       @color-white; //Color for the link hover state
+
+//Collapsed nav styles (mobile)
+@nav-collapsed-margin:      1em 0 0 0;
+@nav-collapsed-font-size:   110%;
+@navlink-collapsed-padding: 10px;
+@nav-text-align-collapsed:  right;
+
+//Hamburger Icon Styles
+@hamburger-color-open:      @color-white;
+@hamburger-color-closed:    @color-white;
+@hamburger-color-hover:     @color-white;
+
+//Active State Name
+@active-state-name:         'Active State Default';
+
+//Navigation A Styling (Tabs)
+@navigation-a-name:                'Navigation Tabs';
+@nav-background-a:                 @color-a;  // Entire Nav BG Color
+@nav-color-a:                      @color-white; //Text and link color for nav
+@nav-border-bottom-a:              solid 2px @color-e;
+@nav-margin-a:                     0 auto;
+@nav-padding-a:                    0;
+@nav-float-a:                      none; //Floats navigation container to the right side
+
+//Navitem (li) styles
+@navitem-float-a:             none;
+
+//Navlink (a) styles
+@navlink-padding-a:           0.75em 1.25em;
+@navlink-margin-a:            0 0.25em;
+@navlink-border-radius-a:     5px 5px 0 0;
+@navlink-background-a:        transparent;
+@navlink-background-hover-a:  @color-e;
+@navlink-color-hover-a:       @color-white; //Color for the link hover state
+@navlink-border-color-a:      @color-e;
+
+//Collapsed nav styles (mobile)
+@nav-collapsed-margin-a:      0;
+@navlink-collapsed-padding-a:   10px;
+@nav-text-align-collapsed-a:  center;
+
+//Hamburger Icon Styles
+@hamburger-color-open-a:    @color-white;
+@hamburger-color-closed-a:  @color-white;
+@hamburger-color-hover-a:   @color-white;
+
+@active-state-name-a:       'Active State Tabs';
+
+// ======================================
+//	Navigation Footer
+// ======================================
+
+@nav-footer-height:         1.85em;
+@nav-footer-a-name:         'Footer Links';
+
+// ======================================
+//	Accordion RMW
+// ======================================
+
+@accordion-font-size:       ~'1.1em';
+@accordion-slide-font-size: ~'1em';
+@accordion-padding:         3px 0 3px 30px;
+@accordion-margin:          0 0 5px 0;
+@accordion-pos-x:          ~'5px';     // default accordion icon horizontal placement
+@accordion-pos-y:          ~'50%';     // default accordion icon vertical placement
+
+
+@accordion-open-URL:          'toggleMinus.png';
+@accordion-closed-URL:        'togglePlus.png';
+
+@accordion-border:          none; //Define as none or solid 3px @color
+@accordion-border-radius:   0; //Define as 0 or pixels
+
+@accordion-toggle-background:    @color-h;
+@accordion-active-background:    @color-g;
+@accordion-hover-background:     @color-g;
+
+@accordion-toggle-color:    @color-b;
+@accordion-active-color:    @color-f;
+@accordion-hover-color:     Color-b;
+
+@accordion-a-name:          "Light Blue";
+
+@accordion-a-closed-URL:   'toggleArrowLeft.png';
+@accordion-a-open-URL:      'toggleArrowDown.png';
+
+@accordion-a-border:        none; //Define as none or solid 3px @color
+
+@accordion-a-toggle-background:    @color-f;
+@accordion-a-active-background:    @color-f;
+@accordion-a-hover-background:     @color-d;
+
+@accordion-a-toggle-color:    @color-white;
+@accordion-a-active-color:    @color-white;
+@accordion-a-hover-color:     @color-white;
+
+// ======================================
+//	Tabs RMW
+// ======================================
+
+@tab-margin:        0 0 -1px 5px;
+@tab-padding:       12px 25px;
+@tab-border-radius: 0;
+@tab-transition:    background 0.3s ease;
+
+@tab-toggle-background:      @color-h;
+@tab-active-background:      @color-white;
+@tab-hover-background:       @color-g;
+
+@tab-toggle-color:          @color-a;
+@tab-active-color:          @color-b;
+@tab-hover-color:           @color-b;
+
+@tab-toggle-border-color:   @color-a;
+@tab-toggle-border-width:   1px;
+@tab-active-border-color:   @color-a;
+@tab-hover-border-color:    @color-a;
+@tab-slides-border-color:   @color-a;
+@tab-slide-bg:              @color-white;
+
+@tab-a-name:                'Light Blue';
+
+@tab-a-toggle-background:      @color-f;
+@tab-a-active-background:      @color-d;
+@tab-a-hover-background:       @color-f;
+
+@tab-a-border:              none;
+
+@tab-a-toggle-color:          @color-d;
+@tab-a-active-color:          @color-f;
+@tab-a-hover-color:           @color-white;
+
+@tab-a-slides-border-color:   @color-d;
+@tab-a-slide-bg:              @color-white;
+
+// ======================================
+//	Rotator RMW
+// ======================================
+
+@rotator-arrow-color-hover:   @color-d;
+@rotator-arrow-color:         @color-e;
+
+@rotator-arrow-border:         none;
+
+@rotator-dot-inactive:         @color-white;
+@rotator-dot-active:           @color-a;
+@rotator-dot-hover:            @color-a;
+
+// ======================================
+//  Forms
+// ======================================
+
+@form-margin:       1em 0;
+@form-padding:      10px;
+@form-color-base:   @color-f; //color for labels, form, etc
+
+@form-cell-padding: .3em .6em;
+@form-cell-align:   right;
+
+@input-color:             @color-b; //color for form input (text boxes, etc)
+@input-bg:                @color-white;
+@input-border:            1px solid @color-a;
+@input-padding:           5px;
+@input-color-hover:       @color-a; //color for form input (text boxes, etc)
+@input-bg-hover:          @color-g;
+
+@error-icon-URL:            ~'formError.png';  
+
+@submit-padding:        .4em .5em;
+
+// ======================================
+//	Forms Drop Downs
+// ======================================
+
+@dropdown-border-radius:    0;
+@select-icon-URL:           ~'icon_select.png';
+
+@error-border:              1px solid @error; 
+@select-icon-URL:           ~'icon_select_error.png';
+
+@select-icon-x:             ~'99%';     // default select icon horizontal placement
+@select-icon-y:             ~'48%';     // default select icon vertical placement
+
+@select-height:             ~'8px';     // The (top padding + bottom padding + font size) determines height cross browser
+
+// ======================================
+// The following are utilities for use in certain cases. Do not edit or remove these.
+// ======================================
+
+// ======================================
+//	Retina Image Media Query
+//
+//	USE: @media @retinaDetect { ... }
+//
+//	NOTE: Use double the px size images
+// ======================================
+
+@retinaDetect:              ~"(-webkit-min-device-pixel-ratio: 2)",
+                            ~"(min-resolution: 192dppx)",
+                            ~"(-moz-min-device-pixel-ratio: 2)", // old
+                            ~"(min--moz-device-pixel-ratio)",    // new
+                            ~"(-o-min-device-pixel-ratio: 2)",
+                            ~"(min-device-pixel-ratio: 2)";
+
+// ======================================
+//  Utilities
+// ======================================
+
+@nested-1:                  ~".nested-1";
+@nested-2:                  ~".nested-2.nested-2s";
+
+// ======================================
+//  Descendant Selectors
+// ======================================
+
+@form-button:               ~'.pf_form_table .pf_submit_cell .pf_submit_button';
+@lightbox-button:           ~'.lbui_lightbox_flex a.lbux_button_link';
+
+// ======================================
+//	IE Classes. These classes are added by the ion platform. When using CSS that does not render In IE 9 or below, you can add additional code for these browsers. For an example, with gradient buttons, we use these to display a flat button in IE 9 or below.
+// ======================================
+
+@lt-ie9: ~'html.ixp-lt-ie9';
+@gte-ie9: ~'html:not(.ixp-lt-ie9)';

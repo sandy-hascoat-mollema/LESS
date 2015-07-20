@@ -1,0 +1,84 @@
+// ======================================
+//	Icons
+// ======================================
+
+// Bullet Icon A
+.li-icon-a(@position) {
+    background-image: url('@li-circle-URL}');
+    background-position: @position;
+    background-repeat: no-repeat;
+}
+
+// A Icon Button
+.icon-a() {
+    background-image: url('@{icon-btn-a-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// B Icon Button
+.icon-b() {
+    background-image: url('@{icon-btn-b-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// C Icon Button
+.icon-c() {
+    background-image: url('@{icon-btn-c-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// D Icon Button
+.icon-d() {
+    background-image: url('@{icon-btn-d-URL}');
+    background-position: @icon-btn-x @icon-btn-y;
+    background-repeat: no-repeat;
+}
+
+// ======================================
+//	General
+// ======================================
+
+// border radius
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+            box-shadow: @shadow;
+}
+
+.box-sizing() {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box; 
+}
+
+// ======================================
+//  Transforms & Transitions
+//
+//  EX: http://www.css3maker.com/css3-transform.html
+//  EX: http://www.css3maker.com/css3-transition.html
+// ======================================
+
+.transform(@transform) {
+    -webkit-transform: @transform;
+       -moz-transform: @transform;
+        -ms-transform: @transform;
+         -o-transform: @transform;
+            transform: @transform;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+        -ms-transition: @transition;
+         -o-transition: @transition;
+            transition: @transition;
+}

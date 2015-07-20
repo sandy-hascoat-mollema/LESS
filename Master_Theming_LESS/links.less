@@ -1,0 +1,85 @@
+  /* ======================================
+	Link Element Base
+====================================== */
+
+a {
+    color: @link-color;
+    display: inline;
+    text-decoration: @link-text;
+    .transition(@link-transition);
+
+    &:hover {
+        color: @link-hover-color;
+        text-decoration: @link-hover-text;
+    }
+}
+
+/* ======================================
+	CTA Links
+
+	REQUIRED CLASS: .cta_link.link-a
+====================================== */
+
+.cta_link {
+    display: inline-block;
+
+    // ======================================
+    //	cta link a
+    // ======================================
+
+    &.link-a {
+        background: url('@{cta-icon-a}') no-repeat @cta-pos-x @cta-pos-y;
+        color: @cta-icon-a-color;
+        padding-right: @icon-cta-spacing;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-a-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+    }
+
+    // ======================================
+    //	cta link b
+    // ======================================
+
+    &.link-b {
+        background: url('@{cta-icon-b}') no-repeat @cta-pos-x @cta-pos-y;
+        color: @cta-icon-b-color;
+        padding-right: @icon-cta-spacing;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-b-color-hover;
+            text-decoration: @cta-link-hover-text;
+        }
+    }
+
+    // ======================================
+    //	cta link c
+    // ======================================
+
+    &.link-c {
+        background: url('@{cta-icon-c}') no-repeat @cta-pos-x @cta-pos-y;
+        color: @cta-icon-c-color;
+        padding-right: @icon-cta-spacing;
+        text-decoration: @cta-link-text;
+
+        &:hover {
+            color: @cta-icon-c-color-hover;
+            text-decoration: @cta-link-hover-text; 
+        }
+    }
+}
+
+/* ======================================
+	Links IXP Information
+
+	REQUIRED CLASS: .cta_link.link-a
+====================================== */
+
+.cta_link {
+    &.link-a { .ixp-link("@{cta-icon-a-name}"); }
+    &.link-b { .ixp-link("@{cta-icon-b-name}"); }
+    &.link-c { .ixp-link("@{cta-icon-c-name}"); }
+}

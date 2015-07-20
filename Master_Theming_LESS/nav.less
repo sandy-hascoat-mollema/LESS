@@ -1,0 +1,280 @@
+/* ======================================
+	Navigation: Default Style Overrides
+====================================== */
+
+// Main Wrapper
+.ixp-nav {
+    background-color: @nav-background;
+    color: @nav-color;
+    font-size: @nav-font-size;
+    margin: @nav-margin;
+    padding: @nav-padding;
+    text-align: @nav-text-align;
+
+    // Navigation Wrapper
+    .ixp-nav-collapsible {
+	    height: auto;
+	    float: @nav-float;
+        padding: 0;
+        margin: 0;
+        
+        // list item
+        .ixp-navitem {
+            background: none;
+            display: inline-block;
+            float: @navitem-float;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+            & when (@navitem-border = true) {
+                border-right: solid 1px @nav-color;
+            }
+            
+            & when (@navitem-border = false) {
+                border-right: solid 1px @nav-color;
+            }
+            
+                a,
+                &@{nested-1} a,
+                &@{nested-2} a {
+                    background-color: @navlink-background;
+                    color: @nav-color;
+                    display: block;
+                    padding: @navlink-padding;
+                    text-decoration: none;
+                
+                    &:hover {
+                        background-color: @navlink-background-hover;
+                        color: @navlink-color-hover;
+                        }
+                
+                    }
+                }
+            }
+    
+     // Navigation UL List
+    .ixp-navlist {
+        
+        li:last-child {
+            & when (@navitem-border = true) {
+                border-right: none; // Removes line to right of last navigation item
+            }
+        }
+        }
+    
+     // Hamburger Responsive Nav Styling
+     // Navigation Wrapper Mobile - Menu Closed
+        &.ixp-nav-collapsed {
+        background-color:  @nav-background;
+        font-size: @nav-collapsed-font-size;
+        margin: @nav-collapsed-margin;
+        text-align: left;
+        
+             // Navigation Wrapper Mobile - Menu Opened
+            .ixp-nav-opened {
+                background-color: @nav-background;
+                }
+
+	       .ixp-nav-collapsible {
+		      float: none; //Nav elements fill page width
+	           }
+
+            // List Item
+            .ixp-navitem {
+                display: block;
+                float: none;
+                margin: 0;
+                padding: 0;
+           
+                    & when (@navitem-border = true) {
+                        border-bottom: solid 1px #ffffff;
+                        border-right: none;
+                    }
+
+                a {
+                    padding: @navlink-collapsed-padding;
+                    text-align: @nav-text-align-collapsed;
+                    }
+                }
+            }
+
+    // Toggle Hamburger
+    .ixp-nav-toggle {
+	    margin: 0;
+
+        // Hamburger coloring
+        .ixp-nav-icon-bar { /* nav toggle button icon (menu closed) */
+            background-color: @hamburger-color-closed; // bar color
+        
+            &:hover {
+                background-color: @hamburger-color-hover;
+                }
+            }
+
+        &.ixp-nav-active {
+            .ixp-nav-icon-bar { /* nav toggle button icon (menu open) */
+                background-color: @hamburger-color-open; // bar color
+                }
+            }
+        }
+    }
+
+/* ======================================
+	Navigation: alt theme(s)
+    REQUIRED CLASS - .ixp-nav-menu-a
+====================================== */
+
+/* ========== THEME A ========== */
+// Main Wrapper
+.ixp-nav-menu-a {
+    background-color: @nav-background-a;
+    border-bottom: @nav-border-bottom-a;
+    color: @nav-color-a;
+    margin: 0 auto;
+    padding: 0;
+    
+    // Navigation Wrapper
+    .ixp-nav-collapsible {
+        float: @nav-float-a;
+	    height: auto;
+        margin: 0 auto;
+        text-align: center;
+        
+        // list item
+        .ixp-navitem {
+            border: none;
+            float:  @navitem-float-a;
+            
+            &:hover {
+                border: none;
+                }
+            
+                a,
+                &@{nested-1} a,
+                &@{nested-2} a {
+                    background-color: @navlink-background-a;
+                    border-right: solid 2px @navlink-border-color-a;
+                    border-left: solid 2px @navlink-border-color-a;
+                    border-top: 2px solid @navlink-border-color-a;
+                    border-bottom: none;
+                    .border-radius(@navlink-border-radius-a);
+                    color: @nav-color-a;
+                    margin: @navlink-margin-a;
+                    padding: @navlink-padding-a;
+                    text-decoration: none;
+                
+                    &:hover {
+                        background: @navlink-background-hover-a;
+                        border-right: solid 2px @navlink-border-color-a;
+                        border-left: solid 2px @navlink-border-color-a;
+                        border-top: 2px solid @navlink-border-color-a;
+                        border-bottom: none;
+                        color: @navlink-color-hover-a;
+                    }
+                
+                    }
+            }
+        }
+    
+       // Navigation UL List
+    .ixp-navlist {
+        
+        li:last-child {
+            /* Overrides Default Styling from ixp-nav */
+            border-right: solid 2px @navlink-border-color-a;
+            border-left: solid 2px @navlink-border-color-a;
+            border-top: 2px solid @navlink-border-color-a;
+            border-bottom: none;
+            }
+        }
+
+     // Navigation Wrapper Mobile - Menu Closed
+        &.ixp-nav-collapsed {
+        /* BG color solid or transparent */
+        background-color:  @nav-background-a;
+        margin: @nav-collapsed-margin-a;
+        text-align: @nav-text-align-collapsed-a;
+        
+             // Navigation Wrapper Mobile - Menu Opened
+            .ixp-nav-opened {
+                background-color:  @nav-background-a;
+            
+                li:first-child {
+                  //Adds margin to the first nav item
+                  margin-top: 0.5em;
+                  }
+
+                }
+
+        // List Item
+        .ixp-navitem {
+            
+            a {
+                border-left: none;
+                border-right: none;
+                .border-radius(0);
+                padding:@navlink-collapsed-padding-a;
+                text-decoration: none;
+                color: @color-white;
+                
+                &:hover {
+                    border-left: none;
+                    border-right: none;
+                    background-color: @navlink-background-hover-a
+                    }
+                }
+            }
+        }
+
+    // Toggle Hamburger
+    .ixp-nav-toggle {
+	    margin: 0;
+
+        // Hamburger coloring
+        .ixp-nav-icon-bar { /* nav toggle button icon (menu closed) */
+            background-color: @hamburger-color-closed-a; // bar color
+        
+            &:hover {
+                background-color: @hamburger-color-hover-a;
+                }
+            }
+
+        &.ixp-nav-active {
+            .ixp-nav-icon-bar { /* nav toggle button icon (menu open) */
+                background-color: @hamburger-color-open-a; // bar color
+                }
+            }
+        }
+    }
+
+/* ======================================
+	Navigation IXP Information
+====================================== */
+
+.ixp-nav-menu-a { .ixp-navigation("@navigation-a-name");}
+
+/* ======================================
+	Navigation Active States
+====================================== */
+
+.ixp-navitem-active-state-a a {
+	background: @navlink-background-hover !important;
+    }
+
+.ixp-navitem-active-state-b a {
+    background: @navlink-background-hover-a !important;
+    border-right: solid 2px @navlink-border-color-a !important;
+    border-left: solid 2px @navlink-border-color-a !important;
+    border-top: 2px solid @navlink-border-color-a !important;
+    border-bottom: none !important;
+    .border-radius(@navlink-border-radius-a);
+    font-weight: bold !important;
+    }
+
+/* ======================================
+	Navigation Active States IXP Information
+====================================== */
+
+.ixp-navitem-active-state-a { .ixp-navitem("@active-state-name"); }
+.ixp-navitem-active-state-b { .ixp-navitem("@active-state-name-a"); }

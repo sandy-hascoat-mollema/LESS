@@ -1,0 +1,213 @@
+/* ======================================
+	Pre Header
+
+	REQUIRED CLASS: .pre-header, .pre-header-a
+====================================== */
+
+.pre-header {
+    padding: @pre-header-padding;
+    }
+
+.pre-header-a {
+    background:  @pre-header-a-bg;
+    color: @pre-header-a-color;
+    padding: @pre-header-padding;
+    a,
+    &@{nested-1} a,
+    &@{nested-2} a {
+        color: @pre-header-a-link;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* ======================================
+	Pre Header IXP Information
+    REQUIRED CLASSES: .pre-header, .pre-header-a
+====================================== */
+
+.pre-header {.ixp-regions-cl("Pre-Header - Transparent");}
+.pre-header-a {.ixp-regions-cl("Pre-Header - @{pre-header-a-name}");}
+
+
+@import "logo.less";
+
+
+/* ======================================
+	Header
+
+	REQUIRED CLASS: .header,.header-a
+====================================== */
+
+.header {
+    padding: @header-padding;  
+}
+
+.header-a {
+    background: @header-a-bg;
+    color: @header-a-color;
+    padding: @header-a-padding;
+    
+    a,
+    &@{nested-1} a,
+    &@{nested-2} a {
+        color: @header-a-link;
+
+        &:hover {
+            color: @header-a-link-hover;
+        }
+    }
+}
+
+/* ======================================
+    Header IXP Information
+    REQUIRED CLASSES: .header-a
+====================================== */
+
+.header {.ixp-regions-cl("Header - Transparent");}
+.header-a {.ixp-regions-cl("Header - @{header-a-name}");}
+
+/* ======================================
+	Inner Content Wrap
+
+	NOTE: Container that includes the
+	pre-content, content & post-content
+
+	REQUIRED CLASS: .inner-content-wrapper
+====================================== */
+
+.inner-content-wrapper {
+}
+
+.inner-content-wrapper-a {
+    background: @innercontent-a-bg;   
+}
+
+/* ======================================
+    Inner Content Wrap IXP Information
+    REQUIRED CLASSES: .inner-content-wrapper
+====================================== */
+
+.inner-content-wrapper {.ixp-regions-c("Inner Content - Transparent");}
+.inner-content-wrapper-a {.ixp-regions-c("Inner Content - @{innercontent-a-name}");}
+
+/* ======================================
+	Pre Content
+    REQUIRED CLASSES: .pre-content
+====================================== */
+
+.pre-content {
+    padding: @pre-content-padding;  
+}
+
+/* ======================================
+    Pre Content IXP Information
+    REQUIRED CLASSES: .pre-content
+====================================== */
+
+.pre-content {.ixp-regions-cl("Pre-Content - Transparent");}
+
+/* ======================================
+	Content
+    REQUIRED CLASSES: .content
+====================================== */
+
+.content {
+    padding: @content-padding;
+}
+
+/* ======================================
+    Content IXP Information
+    REQUIRED CLASSES: .content
+====================================== */
+
+.content {.ixp-regions-cl("Content");}
+
+/* ======================================
+	Post Content
+
+	REQUIRED CLASS: .post-content,.post-content-a
+====================================== */
+
+.post-content {
+    padding: @post-content-padding;    
+}
+
+.post-content-a {
+    background: @post-content-a-bg;
+    padding: @post-content-padding;
+}
+
+/* ======================================
+    Post Content IXP Information
+    REQUIRED CLASSES: .post-content,.post-content-a
+====================================== */
+
+.post-content {.ixp-regions-cl("Post-Content - Transparent");}
+.post-content-a {.ixp-regions-cl("Post-Content - @{post-content-a-name}");}
+
+/* ======================================
+	Footer
+
+	REQUIRED CLASS - .footer,.nav-footer-a
+====================================== */
+
+.footer {
+    font-size: @footer-font-size;
+    padding: @footer-padding;    
+}
+
+.footer-a {
+    background: @footer-a-bg;
+    color: @footer-a-color;
+    font-size: @footer-font-size;
+    padding: 1.1em 0;
+
+    h1, h2, h3, h4, h5, h6, p, 
+        &@{nested-1} h1, &@{nested-1} h2, &@{nested-1} h3, &@{nested-1} h4, &@{nested-1} h5, &@{nested-1} h6,
+        &@{nested-2} h1, &@{nested-2} h2, &@{nested-2} h3, &@{nested-2} h4, &@{nested-2} h5,  &@{nested-2} h6 {
+            color: @footer-a-color;
+        }
+        a {
+            color: @footer-a-link;            
+            &:hover {
+                color: @footer-a-link-hover;
+            }
+        }
+}
+
+/* ======================================
+    Footer IXP Information
+    REQUIRED CLASSES: .footer,.nav-footer-a
+====================================== */
+
+.footer {.ixp-regions-cl("Footer Transparent");}
+.footer-a {.ixp-regions-cl("Footer - @{footer-a-name}");}
+
+@import "footer.less";
+
+/* ======================================
+	Post Footer
+    REQUIRED CLASSES: .post-footer
+====================================== */
+
+.post-footer {
+    padding: @post-footer-padding;   
+}
+
+.post-footer-a {
+    color: @post-footer-a-color;
+    background: @post-footer-a-bg;
+    padding: @post-footer-padding;    
+}
+
+/* ======================================
+    Post Footer IXP Information
+    REQUIRED CLASSES: .post-footer
+====================================== */
+
+.post-footer {.ixp-regions-cl("Post-Footer - Transparent");}
+.post-footer-a {.ixp-regions-cl("Post-Footer - @{post-footer-a-name}");}

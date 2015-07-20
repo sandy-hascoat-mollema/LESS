@@ -1,0 +1,57 @@
+/* ======================================
+	List Items
+
+	REQUIRED CLASS: .bullet-a
+====================================== */
+
+ul, ol  {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: @li-margin;
+    list-style-type: @li-style;
+}
+
+ol {
+    margin-left: @ol-margin;
+    list-style-type: @ol-style;
+}
+
+// ======================================
+//	Bullet A
+// ======================================
+
+.bullet-set-a() {
+    background: url("@{icon-bullet-a}") no-repeat @icon-bullet-x @icon-bullet-y;
+    list-style-type: none;
+    padding-left: @icon-bullet-space;
+}
+
+// if applied to list's parent container
+.bullet-a { ul li { .bullet-set-a(); }}
+
+
+// ======================================
+//	Bullet B
+// ======================================
+
+.bullet-set-b() {
+    background: url("@{icon-bullet-b}") no-repeat @icon-bullet-x @icon-bullet-y;
+    list-style-type: none;
+    padding-left: @icon-bullet-space;
+}
+
+// if applied to list's parent container
+.bullet-b { ul li { .bullet-set-b(); } }
+
+
+/* ======================================
+	List IXP Information
+
+	REQUIRED CLASS: .bullet-a
+====================================== */
+
+.bullet-a { .ixp-bullet("@{bullet-a-name}"); }
+.bullet-b { .ixp-bullet("@{bullet-b-name}"); }

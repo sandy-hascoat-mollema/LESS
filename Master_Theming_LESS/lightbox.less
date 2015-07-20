@@ -1,0 +1,36 @@
+/* ======================================
+	Lightbox RMW
+====================================== */
+
+.lbui_lightbox_flex {
+    a { // text link
+        color: @link-color;
+
+        &:hover {
+            color: @link-hover-color;
+        }
+
+        // button link
+        &.lbux_button_link {
+            border: @btn-border;
+            background: @btn-color-a;
+            cursor: pointer;
+            color: @btn-text-a;
+            font-size: @size-a-font-size;
+            display: inline-block;
+            overflow: visible;
+            padding: @size-a-padding;
+            margin: @btn-margin;
+            overflow: visible;
+            text-align: center;
+            text-decoration: none;
+            .transition(@btn-transition);
+            -webkit-appearance: none;
+
+            &:hover {
+                background: @btn-color-a-hover;
+                color:@btn-text-a;
+            }
+        }
+    }
+}
